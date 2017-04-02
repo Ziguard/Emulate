@@ -1,0 +1,58 @@
+﻿<Page x:Class="Emulate.views.PersonnageViews"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Emulate.views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page1">
+
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="NomPersonnage" Text="Zieshu" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <Button x:Name="Casque" Content="Casque" Grid.Row="0" Grid.Column="0" />
+            <Button x:Name="Cou" Content="Collier" Grid.Row="1" Grid.Column="0" />
+            <Button x:Name="Epauliere"      Content="Epauliere" Grid.Row="2" Grid.Column="0" />
+            <Button x:Name="Cape"           Content="Dos" Grid.Row="3" Grid.Column="0" />
+            <Button x:Name="Chemise"        Content="Chemise" Grid.Row="4" Grid.Column="0" />
+            <Button x:Name="Torse"          Content="Torse" Grid.Row="5" Grid.Column="0" />
+            <Button x:Name="Poignets"       Content="Braselet" Grid.Row="6" Grid.Column="0" />
+            <Button x:Name="Gants"          Content="Gants" Grid.Row="0" Grid.Column="3" />
+            <Button x:Name="Cienture"       Content="Cienture" Grid.Row="1" Grid.Column="3" />
+            <Button x:Name="Jambieres"      Content="Jambieres" Grid.Row="2" Grid.Column="3" />
+            <Button x:Name="Anneau1"        Content="Anneau1" Grid.Row="3" Grid.Column="3" />
+            <Button x:Name="Trinket1"       Content="Bijou1" Grid.Row="5" Grid.Column="3" />
+        </Grid>
+    </Grid>
+</Page>
+
+<!--
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+Click="btnCasque_Click"
+    -->
