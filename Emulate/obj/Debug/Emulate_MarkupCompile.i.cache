@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\
 Emulate
 none
 false
 DEBUG;TRACE
-E:\Dev\Projects\Emulate\Emulate\App.xaml
-141908759551
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\App.xaml
+14-1081475784
 
-47-1735249520
-20-1942788531
-Application.xaml;views\AdministrationViews.xaml;views\administration\Example.xaml;views\administration\GroupAdmin.xaml;views\usercontrols\BossUserControl.xaml;views\usercontrols\ClasseUserControl.xaml;views\usercontrols\DonjonUserControl.xaml;views\usercontrols\ItemsUserControl.xaml;views\usercontrols\ListClasseUserControl.xaml;views\usercontrols\ListItemsUserControl.xaml;views\usercontrols\ListPersonnageUserControl.xaml;views\usercontrols\PersonnageViews.xaml;views\UserControlLayoutView.xaml;views\usercontrols\ListDonjonUserControl.xaml;
+471998141426
+201840711790
+Application.xaml;views\AdministrationViews.xaml;views\administration\Example.xaml;views\administration\PersonnageAdmin.xaml;views\usercontrols\BossUserControl.xaml;views\usercontrols\ClasseUserControl.xaml;views\usercontrols\DonjonUserControl.xaml;views\usercontrols\ItemsUserControl.xaml;views\usercontrols\ListClasseUserControl.xaml;views\usercontrols\ListItemsUserControl.xaml;views\usercontrols\ListPersonnageUserControl.xaml;views\usercontrols\PersonnageViews.xaml;views\UserControlLayoutView.xaml;views\usercontrols\ListDonjonUserControl.xaml;
 
-True
+False
 

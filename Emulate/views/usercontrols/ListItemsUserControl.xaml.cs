@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Emulate.views.usercontrols.ListUserControl
+namespace Emulate.views.usercontrols
 {
     /// <summary>
     /// Logique d'interaction pour ListItemsUserControl.xaml
     /// </summary>
-    public partial class ListItemsUserControl : UserControlBase
+    public partial class ListItemsUserControl : UserControl
     {
         public ListItemsUserControl()
         {

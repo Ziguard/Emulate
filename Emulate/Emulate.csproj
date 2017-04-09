@@ -103,15 +103,15 @@
     <Compile Include="logger\Logger.cs" />
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
-    <Compile Include="viewsmodel\GroupAdminVM.cs" />
+    <Compile Include="viewsmodel\PersonnageAdminVM.cs" />
     <Compile Include="views\AdministrationViews.xaml.cs">
       <DependentUpon>AdministrationViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\administration\Example.xaml.cs">
       <DependentUpon>Example.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\administration\GroupAdmin.xaml.cs">
-      <DependentUpon>GroupAdmin.xaml</DependentUpon>
+    <Compile Include="views\administration\PersonnageAdmin.xaml.cs">
+      <DependentUpon>PersonnageAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\BossUserControl.xaml.cs">
       <DependentUpon>BossUserControl.xaml</DependentUpon>
@@ -164,7 +164,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="views\administration\GroupAdmin.xaml">
+    <Page Include="views\administration\PersonnageAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

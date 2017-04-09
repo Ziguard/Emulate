@@ -25,16 +25,16 @@ namespace Emulate
         public Application()
         {
             InitializeComponent();
-            Personnage personnage = new Personnage();
-            Boss boss = new Boss();
-            Donjon donjon = new Donjon();
+            //Personnage personnage = new Personnage();
+            //Boss boss = new Boss();
+            //Donjon donjon = new Donjon();
 
         }
 
         private void btnDemarrer_Click(object sender, RoutedEventArgs e)
         {
             Window window = new Window();
-            window.Content = new GroupAdmin();
+            window.Content = new PersonnageAdmin();
             window.Show();
         }
 
@@ -43,7 +43,9 @@ namespace Emulate
 
         }
 
+        private void btnEmployee_Click (object sender, RoutedEventArgs e)
+        {
 
-
+        }
     }
 }
