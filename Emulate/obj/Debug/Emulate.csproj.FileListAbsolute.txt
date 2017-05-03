@@ -95,3 +95,4 @@ D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.exe
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.pdb
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\PersonnageAdmin.g.cs
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\PersonnageAdmin.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.csprojResolveAssemblyReference.cache
