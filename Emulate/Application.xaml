@@ -16,11 +16,9 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition/>
                 </Grid.RowDefinitions>
-            <Button x:Name="Demarrer" Click="btnDemarrer_Click" Content="Demarrer" Grid.Row="0" Grid.Column="1" />
-            <Button x:Name="Reprendre" Click="btnReprendre_Click" Content="Reprendre"  Grid.Row="1" Grid.Column="1" />
-            <Button x:Name="Administration" Click="btnEmployee_Click" Content="Administration"  Grid.Row="2" Grid.Column="1" />
+            <Button x:Name="Demarrer" Click="btnDemarrer_Click" Content="Jouer" Grid.Row="0" Grid.Column="1" />
+            <Button x:Name="Administration" Click="btnAdministration_Click" Content="Administration"  Grid.Row="2" Grid.Column="1" />
         </Grid>
     </Grid>
 </Window>

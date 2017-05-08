@@ -80,6 +80,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Administration.xaml.cs">
+      <DependentUpon>Administration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="commandworker\CommandWorker.cs" />
     <Compile Include="commandworker\ManualResetAction.cs" />
     <Compile Include="entities\bases\BaseDBEntity.cs" />
@@ -91,6 +94,7 @@
     <Compile Include="entities\items\basesItems\basesItems.cs" />
     <Compile Include="entities\items\Items.cs" />
     <Compile Include="entities\json\JsonManager.cs" />
+    <Compile Include="entities\party\party.cs" />
     <Compile Include="entities\quest\Boss.cs" />
     <Compile Include="entities\quest\Donjon.cs" />
     <Compile Include="entities\player\Classe.cs" />
@@ -134,6 +138,9 @@
     <Compile Include="views\usercontrols\ListPersonnageUserControl.xaml.cs">
       <DependentUpon>ListPersonnageUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\usercontrols\PartyUserControl.xaml.cs">
+      <DependentUpon>PartyUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\usercontrols\PersonnageViews.xaml.cs">
       <DependentUpon>PersonnageViews.xaml</DependentUpon>
     </Compile>
@@ -144,6 +151,10 @@
     <Compile Include="views\usercontrols\ListDonjonUserControl.xaml.cs">
       <DependentUpon>ListDonjonUserControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="Administration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Application.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -193,6 +204,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\usercontrols\ListPersonnageUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\PartyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

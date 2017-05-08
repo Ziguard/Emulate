@@ -33,19 +33,13 @@ namespace Emulate
 
         private void btnDemarrer_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new Window();
-            window.Content = new PersonnageAdmin();
+
+        }
+
+        private void btnAdministration_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Administration();
             window.Show();
-        }
-
-        private void btnReprendre_Click ( object sender,RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnEmployee_Click (object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
