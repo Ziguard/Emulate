@@ -16,4 +16,9 @@ FD:\Dev\Projects\Emulate\Emulate\views\UserControlLayoutView.xaml;;
 FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ListDonjonUserControl.xaml;;
 FD:\Dev\Projects\Emulate\Emulate\Administration.xaml;;
 FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\PartyUserControl.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\administration\ClassesAdmin.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\administration\DonjonAdmin.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\administration\PartyAdmin.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\administration\BossAdmin.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\administration\ItemsAdmin.xaml;;
 

@@ -107,12 +107,32 @@
     <Compile Include="logger\Logger.cs" />
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
+    <Compile Include="viewsmodel\BossAdminVM.cs" />
+    <Compile Include="viewsmodel\ClasseAdminVM.cs" />
+    <Compile Include="viewsmodel\DonjonAdminVM.cs" />
+    <Compile Include="viewsmodel\ItemsAdminVM.cs" />
+    <Compile Include="viewsmodel\PartyAdminVM.cs" />
     <Compile Include="viewsmodel\PersonnageAdminVM.cs" />
     <Compile Include="views\AdministrationViews.xaml.cs">
       <DependentUpon>AdministrationViews.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\administration\BossAdmin.xaml.cs">
+      <DependentUpon>BossAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\ClassesAdmin.xaml.cs">
+      <DependentUpon>ClassesAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\DonjonAdmin.xaml.cs">
+      <DependentUpon>DonjonAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\administration\Example.xaml.cs">
       <DependentUpon>Example.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\ItemsAdmin.xaml.cs">
+      <DependentUpon>ItemsAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\PartyAdmin.xaml.cs">
+      <DependentUpon>PartyAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\administration\PersonnageAdmin.xaml.cs">
       <DependentUpon>PersonnageAdmin.xaml</DependentUpon>
@@ -171,9 +191,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\administration\BossAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\administration\ClassesAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\administration\DonjonAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\administration\Example.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\administration\ItemsAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\administration\PartyAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\administration\PersonnageAdmin.xaml">
       <SubType>Designer</SubType>

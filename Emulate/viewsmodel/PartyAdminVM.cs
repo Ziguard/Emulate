@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Emulate.viewsmodel
 {
-    class PartyAdminVM
+    public class PartyAdminVM
     {
         private PartyAdmin partyAdmin;
 

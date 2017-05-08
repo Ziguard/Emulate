@@ -36,27 +36,37 @@ namespace Emulate
 
         private void btnClasse_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new Window();
+            window.Content = new ClassesAdmin();
+            window.Show();
         }
 
         private void btnItems_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new Window();
+            window.Content = new ItemsAdmin();
+            window.Show();
         }
 
         private void btnBoss_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new Window();
+            window.Content = new BossAdmin();
+            window.Show();
         }
 
         private void btnDonjon_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new Window();
+            window.Content = new DonjonAdmin();
+            window.Show();
         }
 
         private void btnPartie_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new Window();
+            window.Content = new PartyAdmin();
+            window.Show();
         }
     }
 }

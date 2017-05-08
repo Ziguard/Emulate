@@ -150,3 +150,13 @@ D:\Dev\Projects\Emulate\Emulate\obj\Debug\Administration.g.cs
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PartyUserControl.g.cs
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\Administration.baml
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PartyUserControl.baml
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ClassesAdmin.g.cs
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\DonjonAdmin.g.cs
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\PartyAdmin.g.cs
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\BossAdmin.g.cs
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ClassesAdmin.baml
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\DonjonAdmin.baml
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\PartyAdmin.baml
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\BossAdmin.baml
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ItemsAdmin.g.cs
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ItemsAdmin.baml

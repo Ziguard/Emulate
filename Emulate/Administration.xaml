@@ -17,11 +17,11 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnItems" Click="btnItems_Click" Content="Address" Grid.Row="0" Grid.Column="0" />
-        <Button x:Name="btnClasse" Click="btnClasse_Click" Content="Animal"  Grid.Row="0" Grid.Column="1" />
-        <Button x:Name="btnPlayer" Click="btnPlayer_Click" Content="Employee"  Grid.Row="0" Grid.Column="2" />
-        <Button x:Name="btnBoss" Click="btnBoss_Click" Content="Schedule"  Grid.Row="1" Grid.Column="1" />
-        <Button x:Name="btnDonjon" Click="btnDonjon_Click" Content="StreetNumber"  Grid.Row="1" Grid.Column="2" />
-        <Button x:Name="btnPartie" Click="btnPartie_Click" Content="Structure"  Grid.Row="2" Grid.Column="0" />
+        <Button x:Name="btnItems" Click="btnItems_Click" Content="Items" Grid.Row="0" Grid.Column="0" />
+        <Button x:Name="btnClasse" Click="btnClasse_Click" Content="Classe"  Grid.Row="0" Grid.Column="1" />
+        <Button x:Name="btnPlayer" Click="btnPlayer_Click" Content="Player"  Grid.Row="0" Grid.Column="2" />
+        <Button x:Name="btnBoss" Click="btnBoss_Click" Content="Boss"  Grid.Row="1" Grid.Column="1" />
+        <Button x:Name="btnDonjon" Click="btnDonjon_Click" Content="Donjon"  Grid.Row="1" Grid.Column="2" />
+        <Button x:Name="btnPartie" Click="btnPartie_Click" Content="Partie"  Grid.Row="2" Grid.Column="0" />
     </Grid>
 </Window>

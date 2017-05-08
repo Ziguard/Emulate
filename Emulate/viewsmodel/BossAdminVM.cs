@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.views.administration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,11 @@ namespace Emulate.viewsmodel
 {
     class BossAdminVM
     {
+        private BossAdmin bossAdmin;
+
+        internal void LoadPersonnageAdmin(BossAdmin bossAdmin)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
