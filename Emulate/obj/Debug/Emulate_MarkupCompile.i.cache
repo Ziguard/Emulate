@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Dev\Projects\Emulate\Emulate\App.xaml
-16636866790
+18-2009713984
 
-50-1584564510
+571865521933
 20931610527
-Administration.xaml;Application.xaml;views\AdministrationViews.xaml;views\administration\Example.xaml;views\administration\PersonnageAdmin.xaml;views\usercontrols\BossUserControl.xaml;views\usercontrols\ClasseUserControl.xaml;views\usercontrols\DonjonUserControl.xaml;views\usercontrols\ItemsUserControl.xaml;views\usercontrols\ListClasseUserControl.xaml;views\usercontrols\ListItemsUserControl.xaml;views\usercontrols\ListPersonnageUserControl.xaml;views\usercontrols\PartyUserControl.xaml;views\usercontrols\PersonnageViews.xaml;views\UserControlLayoutView.xaml;views\usercontrols\ListDonjonUserControl.xaml;
+Administration.xaml;Application.xaml;views\AdministrationViews.xaml;views\administration\ClassesAdmin.xaml;views\administration\Example.xaml;views\administration\PartyAdmin.xaml;views\administration\PersonnageAdmin.xaml;views\usercontrols\BossUserControl.xaml;views\usercontrols\ClasseUserControl.xaml;views\usercontrols\DonjonUserControl.xaml;views\usercontrols\ItemsUserControl.xaml;views\usercontrols\ListClasseUserControl.xaml;views\usercontrols\ListItemsUserControl.xaml;views\usercontrols\ListPersonnageUserControl.xaml;views\usercontrols\PartyUserControl.xaml;views\usercontrols\PersonnageViews.xaml;views\UserControlLayoutView.xaml;views\usercontrols\ListDonjonUserControl.xaml;
 
 True
 
