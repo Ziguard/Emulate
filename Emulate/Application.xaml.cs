@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Emulate.views.game;
 
 namespace Emulate
 {
@@ -22,6 +23,7 @@ namespace Emulate
     /// </summary>
     public partial class Application : Window
     {
+
         public Application()
         {
             InitializeComponent();
@@ -33,12 +35,17 @@ namespace Emulate
 
         private void btnDemarrer_Click(object sender, RoutedEventArgs e)
         {
+            this.Content = new ChoosePartyViews();
 
+            //Window window = new Window();
+            //window.Content = new ChoosePartyViews();
+            //window.Show();                   
         }
 
         private void btnAdministration_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new Administration();
+            NavigationWindow window = new NavigationWindow();
+            window.Content = new AdministrationViews();
             window.Show();
         }
     }

@@ -80,9 +80,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Administration.xaml.cs">
-      <DependentUpon>Administration.xaml</DependentUpon>
-    </Compile>
     <Compile Include="commandworker\CommandWorker.cs" />
     <Compile Include="commandworker\ManualResetAction.cs" />
     <Compile Include="entities\bases\BaseDBEntity.cs" />
@@ -94,7 +91,7 @@
     <Compile Include="entities\items\basesItems\basesItems.cs" />
     <Compile Include="entities\items\Items.cs" />
     <Compile Include="entities\json\JsonManager.cs" />
-    <Compile Include="entities\party\party.cs" />
+    <Compile Include="entities\party\Party.cs" />
     <Compile Include="entities\quest\Boss.cs" />
     <Compile Include="entities\quest\Donjon.cs" />
     <Compile Include="entities\player\Classe.cs" />
@@ -107,74 +104,26 @@
     <Compile Include="logger\Logger.cs" />
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
-    <Compile Include="viewsmodel\BossAdminVM.cs" />
-    <Compile Include="viewsmodel\ClasseAdminVM.cs" />
-    <Compile Include="viewsmodel\DonjonAdminVM.cs" />
-    <Compile Include="viewsmodel\ItemsAdminVM.cs" />
-    <Compile Include="viewsmodel\PartyAdminVM.cs" />
-    <Compile Include="viewsmodel\PersonnageAdminVM.cs" />
-    <Compile Include="views\AdministrationViews.xaml.cs">
+    <Compile Include="viewsmodel\ChossePartyAdminVM.cs" />
+    <Compile Include="views\administration\AdministrationViews.xaml.cs">
       <DependentUpon>AdministrationViews.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\administration\BossAdmin.xaml.cs">
-      <DependentUpon>BossAdmin.xaml</DependentUpon>
+    <Compile Include="views\game\CreateCharViews.xaml.cs">
+      <DependentUpon>CreateCharViews.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\administration\ClassesAdmin.xaml.cs">
-      <DependentUpon>ClassesAdmin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\administration\DonjonAdmin.xaml.cs">
-      <DependentUpon>DonjonAdmin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\administration\Example.xaml.cs">
-      <DependentUpon>Example.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\administration\ItemsAdmin.xaml.cs">
-      <DependentUpon>ItemsAdmin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\administration\PartyAdmin.xaml.cs">
-      <DependentUpon>PartyAdmin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\administration\PersonnageAdmin.xaml.cs">
-      <DependentUpon>PersonnageAdmin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\BossUserControl.xaml.cs">
-      <DependentUpon>BossUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\ClasseUserControl.xaml.cs">
-      <DependentUpon>ClasseUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\DonjonUserControl.xaml.cs">
-      <DependentUpon>DonjonUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\ItemsUserControl.xaml.cs">
-      <DependentUpon>ItemsUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\ListClasseUserControl.xaml.cs">
-      <DependentUpon>ListClasseUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\ListItemsUserControl.xaml.cs">
-      <DependentUpon>ListItemsUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\ListPersonnageUserControl.xaml.cs">
-      <DependentUpon>ListPersonnageUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\PartyUserControl.xaml.cs">
-      <DependentUpon>PartyUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\PersonnageViews.xaml.cs">
-      <DependentUpon>PersonnageViews.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\UserControlLayoutView.xaml.cs">
-      <DependentUpon>UserControlLayoutView.xaml</DependentUpon>
+    <Compile Include="views\game\ChoosePartyViews.xaml.cs">
+      <DependentUpon>ChoosePartyViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\base\UserControlBase.cs" />
-    <Compile Include="views\usercontrols\ListDonjonUserControl.xaml.cs">
-      <DependentUpon>ListDonjonUserControl.xaml</DependentUpon>
+    <Compile Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml.cs">
+      <DependentUpon>ListPartyUserControl.xaml</DependentUpon>
     </Compile>
-    <Page Include="Administration.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="views\usercontrols\usercontrols\createPartyUserControl.xaml.cs">
+      <DependentUpon>createPartyUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\PartyUserControl.xaml.cs">
+      <DependentUpon>PartyUserControl.xaml</DependentUpon>
+    </Compile>
     <Page Include="Application.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -187,81 +136,29 @@
       <DependentUpon>Application.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="views\AdministrationViews.xaml">
+    <Page Include="views\administration\AdministrationViews.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\administration\BossAdmin.xaml">
+    <Page Include="views\game\CreateCharViews.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\administration\ClassesAdmin.xaml">
+    <Page Include="views\game\ChoosePartyViews.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\administration\DonjonAdmin.xaml">
+    <Page Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\administration\Example.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="views\administration\ItemsAdmin.xaml">
+    <Page Include="views\usercontrols\usercontrols\createPartyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\administration\PartyAdmin.xaml">
+    <Page Include="views\usercontrols\usercontrols\PartyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\administration\PersonnageAdmin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\BossUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\ClasseUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\DonjonUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\ItemsUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\ListClasseUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\ListItemsUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\ListPersonnageUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\PartyUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\PersonnageViews.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\UserControlLayoutView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="views\usercontrols\ListDonjonUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -292,7 +189,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="imageEmulate\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

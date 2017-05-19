@@ -64,8 +64,10 @@ namespace Emulate.views.administration
             MySQLManager<Donjon> donjonManager = new MySQLManager<Donjon>();
             this.UCDonjonList.LoadItems((await donjonManager.Get()).ToList());
 
-            //MySQLManager <Personnage> bossManager = new MySQLManager<Personnage>();
-            //this.UCBossList.LoadItem((await bossManager.Get()).ToList());
+            MySQLManager <Personnage> personnageManager = new MySQLManager<Personnage>();
+            //this.UCPersonnageList.LoadItem((await personnageManager.Get()).ToList());
+
+            MySQLManager<Party> partyManager = new MySQLManager<Party>();
         }
 
         private void UCAddressList_Loaded(object sender, RoutedEventArgs e)

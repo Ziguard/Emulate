@@ -1,69 +1,14 @@
-D:\Code\Visual Studio 2015\BisMythicPlus\BisMythicPlus\bin\Debug\Emulate.exe.config
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\bin\Debug\Emulate.exe.config
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\Emulate.csprojResolveAssemblyReference.cache
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\Application.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\AdministrationViews.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\administration\Example.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\administration\GroupAdmin.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\BossUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ClasseUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\DonjonUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ItemsUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListUserControl\ListBossUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListUserControl\ListClasseUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListUserControl\ListItemsUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListUserControl\ListPersonnageUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\PersonnageViews.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\UserControlLayoutView.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListUserControl\ListDonjonUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\App.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\GeneratedInternalTypeHelper.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\Emulate_MarkupCompile.cache
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\Emulate_MarkupCompile.lref
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListBossUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListClasseUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListItemsUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListPersonnageUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\BisMythicPlus\obj\Debug\views\usercontrols\ListDonjonUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\bin\Debug\Emulate.exe.config
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.csprojResolveAssemblyReference.cache
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\Application.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\AdministrationViews.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\Example.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\GroupAdmin.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\BossUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ClasseUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\DonjonUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ItemsUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListBossUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListClasseUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListItemsUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListPersonnageUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PersonnageViews.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\UserControlLayoutView.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListDonjonUserControl.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\App.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\GeneratedInternalTypeHelper.g.cs
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate_MarkupCompile.cache
-E:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate_MarkupCompile.lref
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\Emulate.exe.config
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Application.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\AdministrationViews.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\Example.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\BossUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ClasseUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\DonjonUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ItemsUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListClasseUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListItemsUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListPersonnageUserControl.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PersonnageViews.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\UserControlLayoutView.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListDonjonUserControl.g.cs
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\AdministrationViews.g.cs
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\game\CreateCharViews.g.cs
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\game\ChoosePartyViews.g.cs
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\listusercontrols\ListPartyUserControl.g.cs
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\usercontrols\PartyUserControl.g.cs
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\App.g.cs
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate_MarkupCompile.cache
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate_MarkupCompile.lref
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\Emulate.exe.config
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\Emulate.exe
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\Emulate.pdb
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\EntityFramework.dll
@@ -76,87 +21,15 @@ D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\EntityFramework.xm
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\EntityFramework.SqlServer.xml
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\bin\Debug\Newtonsoft.Json.xml
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Application.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\AdministrationViews.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\Example.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\BossUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ClasseUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\DonjonUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ItemsUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListClasseUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListItemsUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListPersonnageUserControl.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PersonnageViews.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\UserControlLayoutView.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListDonjonUserControl.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\AdministrationViews.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\game\CreateCharViews.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\game\ChoosePartyViews.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\listusercontrols\ListPartyUserControl.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\usercontrols\PartyUserControl.baml
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.g.resources
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.Properties.Resources.resources
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.csproj.GenerateResource.Cache
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.exe
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.pdb
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\PersonnageAdmin.g.cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\administration\PersonnageAdmin.baml
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\Emulate.csprojResolveAssemblyReference.cache
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\Emulate.exe.config
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\Emulate.exe
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\Emulate.pdb
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\EntityFramework.dll
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\EntityFramework.SqlServer.dll
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\Faker.dll
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\MySql.Data.dll
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\MySql.Data.Entity.EF6.dll
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\Newtonsoft.Json.dll
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\EntityFramework.xml
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\EntityFramework.SqlServer.xml
-D:\Dev\Projects\Emulate\Emulate\bin\Debug\Newtonsoft.Json.xml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.csprojResolveAssemblyReference.cache
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Application.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\AdministrationViews.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\Example.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\PersonnageAdmin.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\BossUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ClasseUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\DonjonUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ItemsUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListClasseUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListItemsUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListPersonnageUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PersonnageViews.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\UserControlLayoutView.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListDonjonUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\App.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate_MarkupCompile.cache
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate_MarkupCompile.lref
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Application.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\AdministrationViews.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\Example.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\PersonnageAdmin.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\BossUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ClasseUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\DonjonUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ItemsUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListClasseUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListItemsUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListPersonnageUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PersonnageViews.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\UserControlLayoutView.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\ListDonjonUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.g.resources
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.Properties.Resources.resources
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.csproj.GenerateResource.Cache
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.exe
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.pdb
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Administration.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PartyUserControl.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Administration.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\PartyUserControl.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ClassesAdmin.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\DonjonAdmin.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\PartyAdmin.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\BossAdmin.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ClassesAdmin.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\DonjonAdmin.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\PartyAdmin.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\BossAdmin.baml
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ItemsAdmin.g.cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\administration\ItemsAdmin.baml
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\usercontrols\createPartyUserControl.g.cs
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\usercontrols\createPartyUserControl.baml

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Emulate.entities;
 using Emulate.json;
+using Emulate.views;
 
 namespace Emulate.database
 {
@@ -17,16 +18,14 @@ namespace Emulate.database
 
         public DbSet<Items> ItemsTable { get; set; }
 
-        //public DbSet<Anneau> AnneauTable { get; set; }
-        //public DbSet<Casque> CasqueTable { get; set; }
-        //public DbSet<Cou> CouTable { get; set; }
-        //public DbSet<Dos> DosTable { get; set; }
-        //public DbSet<Epauliere> EpauliereTable { get; set; }
-        //public DbSet<Mains> MainsTable { get; set; }
-        //public DbSet<Torse> TorseTable { get; set; }
+        public DbSet<Party> PartyTable { get; set; }
+        public DbSet<Classe> ClasseTable { get; set; }
+        public DbSet<Personnage> PersonnageTable { get; set; }
+        public DbSet<Boss> BossTable { get; set; }
+        public DbSet<Donjon> DonjonTable { get; set; }
 
         public MySQLFullDB()
-            : base(JsonManager.Instance.ReadFile<ConnectionString>(@"..\..\..\jsonconfig\", @"MysqlConfig.json").ToString())
+            : base(JsonManager.Instance.ReadFile<ConnectionString>(@"\jsonconfig\", @"MysqlConfig.json").ToString())
         {
             InitLocalMySQL();
         }
@@ -35,57 +34,41 @@ namespace Emulate.database
         {
             if (this.Database.CreateIfNotExists())
             {
-                EntityGenerator<Items> generatorAnneau = new EntityGenerator<Items>();
+                EntityGenerator<Items> generatorItems = new EntityGenerator<Items>();
                 for (int i = 0; i < 10; i++)
                 {
-                    ItemsTable.Add(generatorAnneau.GenerateItem());
+                    ItemsTable.Add(generatorItems.GenerateItem());
                 }
 
+                EntityGenerator<Party> generatorParty = new EntityGenerator<Party>();
+                for (int i = 0; i < 10; i++)
+                {
+                    PartyTable.Add(generatorParty.GenerateItem());
+                }
 
+                EntityGenerator<Classe> generatorClasse = new EntityGenerator<Classe>();
+                for (int i = 0; i < 20; i++)
+                {
+                    ClasseTable.Add(generatorClasse.GenerateItem());
+                }
 
-                //EntityGenerator<Anneau> generatorAnneau = new EntityGenerator<Anneau>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    AnneauTable.Add(generatorAnneau.GenerateItem());
-                //}
+                EntityGenerator<Personnage> generatorPersonnage = new EntityGenerator<Personnage>();
+                for (int i = 0; i < 10; i++)
+                {
+                    PersonnageTable.Add(generatorPersonnage.GenerateItem());
+                }
 
-                //EntityGenerator<Casque> generatorCasque = new EntityGenerator<Casque>();
-                //for (int i = 0; i < 20; i++)
-                //{
-                //    CasqueTable.Add(generatorCasque.GenerateItem());
-                //}
+                EntityGenerator<Boss> generatorBoss = new EntityGenerator<Boss>();
+                for (int i = 0; i < 10; i++)
+                {
+                    BossTable.Add(generatorBoss.GenerateItem());
+                }
 
-                //EntityGenerator<Cou> generatorCou = new EntityGenerator<Cou>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    CouTable.Add(generatorCou.GenerateItem());
-
-                //}
-
-                //EntityGenerator<Dos> generatorDos = new EntityGenerator<Dos>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    DosTable.Add(generatorDos.GenerateItem());
-                //}
-
-                //EntityGenerator<Epauliere> generatorEpauliere = new EntityGenerator<Epauliere>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    EpauliereTable.Add(generatorEpauliere.GenerateItem());
-                //}
-
-                //EntityGenerator<Mains> generatorMains = new EntityGenerator<Mains>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    MainsTable.Add(generatorMains.GenerateItem());
-                //}
-
-
-                //EntityGenerator<Torse> generatorTorse = new EntityGenerator<Torse>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    TorseTable.Add(generatorTorse.GenerateItem());
-                //}
+                EntityGenerator<Donjon> generatorDonjon = new EntityGenerator<Donjon>();
+                for (int i = 0; i < 10; i++)
+                {
+                    DonjonTable.Add(generatorDonjon.GenerateItem());
+                }
 
                 this.SaveChangesAsync();
 

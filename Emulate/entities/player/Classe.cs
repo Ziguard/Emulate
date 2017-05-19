@@ -9,7 +9,19 @@ namespace Emulate.entities
 {
     public class Classe : BaseDBEntity
     {
-        string NomClasse;
-        
+        private string nomClasse;
+
+        public string NomClasse
+        {
+            get
+            {
+                return nomClasse;
+            }
+
+            set
+            {
+                nomClasse = value;
+            }
+        }
     }
 }

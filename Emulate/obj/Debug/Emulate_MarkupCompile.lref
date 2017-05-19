@@ -1,24 +1,10 @@
 ﻿
 
-FD:\Dev\Projects\Emulate\Emulate\Application.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\AdministrationViews.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\Example.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\PersonnageAdmin.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\BossUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ClasseUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\DonjonUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ItemsUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ListClasseUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ListItemsUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ListPersonnageUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\PersonnageViews.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\UserControlLayoutView.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\ListDonjonUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\Administration.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\PartyUserControl.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\ClassesAdmin.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\DonjonAdmin.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\PartyAdmin.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\BossAdmin.xaml;;
-FD:\Dev\Projects\Emulate\Emulate\views\administration\ItemsAdmin.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\Application.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\AdministrationViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\CreateCharViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\ChoosePartyViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListPartyUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\createPartyUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\PartyUserControl.xaml;;
 

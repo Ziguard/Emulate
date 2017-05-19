@@ -5,20 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Emulate"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" >
     <Grid>
+        <Canvas  >
+            <Image Source="D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\imageEmulate\Start.jpg"/>
+        </Canvas>
         <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-            <Button x:Name="Demarrer" Click="btnDemarrer_Click" Content="Jouer" Grid.Row="0" Grid.Column="1" />
-            <Button x:Name="Administration" Click="btnAdministration_Click" Content="Administration"  Grid.Row="2" Grid.Column="1" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Demarrer" Click="btnDemarrer_Click" Content="Jouer" Grid.Row="0" Grid.Column="1" Opacity="0.5" />
+            <Button x:Name="Administration" Click="btnAdministration_Click" Content="Administration"  Grid.Row="2" Grid.Column="1" Opacity="0.5" />
         </Grid>
     </Grid>
+
 </Window>

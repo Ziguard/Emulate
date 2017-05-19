@@ -19,9 +19,14 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
-        <Button x:Name="btnValidate" Content="Save" Grid.Column="0" Grid.Row="1"/>
-        <Button x:Name="btnNew" Content="New" Grid.Column="0" Grid.Row="2" />
-        <Button x:Name="btnDelete" Content="Delete" Grid.Column="0" Grid.Row="3"/>
+        <Label x:Name="lblStreet" Content="Street" Grid.Column="0" Grid.Row="1"/>
+        <TextBox x:Name="txtBStreet" Text="{Binding Address.Street, Mode=TwoWay}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="btnValidate" Content="Save" Grid.Column="0" Grid.Row="2"/>
+        <Button x:Name="btnNew" Content="New" Grid.Column="0" Grid.Row="3" />
+        <Button x:Name="btnDelete" Content="Delete" Grid.Column="0" Grid.Row="4"/>
+        
+        
     </Grid>
 </Page>

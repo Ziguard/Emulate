@@ -11,9 +11,15 @@ namespace Emulate.viewsmodel
     {
         private ClassesAdmin classesAdmin;
 
-        internal void LoadPersonnageAdmin(ClassesAdmin classesAdmin)
+        private PartyAdmin partyAdmin;
+        private MySQLManager<Party> partyManager = new MySQLManager<Party>();
+        private Application application;
+
+        public  (PartyAdmin partyAdmin)
         {
-            throw new NotImplementedException();
+            this.partyAdmin = partyAdmin;
+            InitUC();
+            InitLUC();
+            InitActions();
         }
-    }
 }

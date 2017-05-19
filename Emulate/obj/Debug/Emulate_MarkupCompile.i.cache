@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\
 Emulate
 none
 false
 DEBUG;TRACE
-D:\Dev\Projects\Emulate\Emulate\App.xaml
-21348851607
+D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\App.xaml
+7-1689134949
 
-601662718522
-20931610527
-Administration.xaml;Application.xaml;views\AdministrationViews.xaml;views\administration\BossAdmin.xaml;views\administration\ClassesAdmin.xaml;views\administration\DonjonAdmin.xaml;views\administration\Example.xaml;views\administration\ItemsAdmin.xaml;views\administration\PartyAdmin.xaml;views\administration\PersonnageAdmin.xaml;views\usercontrols\BossUserControl.xaml;views\usercontrols\ClasseUserControl.xaml;views\usercontrols\DonjonUserControl.xaml;views\usercontrols\ItemsUserControl.xaml;views\usercontrols\ListClasseUserControl.xaml;views\usercontrols\ListItemsUserControl.xaml;views\usercontrols\ListPersonnageUserControl.xaml;views\usercontrols\PartyUserControl.xaml;views\usercontrols\PersonnageViews.xaml;views\UserControlLayoutView.xaml;views\usercontrols\ListDonjonUserControl.xaml;
+41915047534
+201840711790
+Application.xaml;views\administration\AdministrationViews.xaml;views\game\CreateCharViews.xaml;views\game\ChoosePartyViews.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\usercontrols\createPartyUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;
 
 False
 

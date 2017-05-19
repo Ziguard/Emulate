@@ -5,10 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Emulate.entities.party
+namespace Emulate.entities
 {
-    class party : BaseDBEntity
+    public class Party : BaseDBEntity
     {
-        string NameParty;
+        private string name;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
     }
 }
