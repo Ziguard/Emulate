@@ -9,12 +9,38 @@ namespace Emulate.entities
 {
     public class Party : BaseDBEntity
     {
-        private string name;
+        private String name;
+        private List<Personnage> groupe;
 
-        public string Name
+        public Party()
         {
-            get { return name; }
-            set { name = value; }
+
+        }
+
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+                OnPropertyChanged("Name");
+            }
+        }
+
+        public List<Personnage> Groupe
+        {
+            get
+            {
+                return this.groupe;
+            }
+            set
+            {
+                this.groupe= value;
+                OnPropertyChanged("Groupe");
+            }
         }
     }
 }

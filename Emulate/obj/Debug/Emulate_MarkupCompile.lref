@@ -1,10 +1,11 @@
 ﻿
 
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\Application.xaml;;
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\AdministrationViews.xaml;;
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\CreateCharViews.xaml;;
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\ChoosePartyViews.xaml;;
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListPartyUserControl.xaml;;
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\createPartyUserControl.xaml;;
-FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\PartyUserControl.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\Application.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\administration\AdministrationViews.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\game\CreatePartyViews.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\game\ChoosePartyViews.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\game\CreateCharViews.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListPartyUserControl.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\usercontrols\CharUserControl.xaml;;
+FD:\Dev\Projects\Emulate\Emulate\views\usercontrols\usercontrols\PartyUserControl.xaml;;
 

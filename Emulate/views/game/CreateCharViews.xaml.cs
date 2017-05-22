@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Emulate.viewsmodel;
 
 namespace Emulate.views.game
 {
@@ -23,6 +24,14 @@ namespace Emulate.views.game
         public CreateCharViews()
         {
             InitializeComponent();
+            DataContext = new PersonnageAdminVM(this);
+        }
+
+        public CreateCharViews(ChoosePartyAdminVM choosePartyModel)
+        {
+            InitializeComponent();
+            this.DataContext = choosePartyModel;
+            choosePartyModel.LoadCreateCharPage(this);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,13 +17,26 @@ using System.Windows.Shapes;
 namespace Emulate.views.usercontrols.usercontrols
 {
     /// <summary>
-    /// Logique d'interaction pour createPartyUserControl.xaml
+    /// Logique d'interaction pour CharUserControlUserControl.xaml
     /// </summary>
-    public partial class createPartyUserControl : UserControl
+    public partial class CharUserControl : UserControlBase
     {
-        public createPartyUserControl()
+
+        private Personnage personnage;
+
+        public Personnage Personnage
+        {
+            get { return personnage; }
+            set {
+                personnage = value;
+                base.OnPropertyChanged("Personnage");
+                }
+        }
+
+        public CharUserControl()
         {
             InitializeComponent();
+            base.DataContext = this;
         }
     }
 }

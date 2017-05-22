@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,36 +19,44 @@ namespace Emulate.views.usercontrols.usercontrols
     /// <summary>
     /// Logique d'interaction pour PartyUserControl.xaml
     /// </summary>
-    public partial class PartyUserControl : UserControl
+    public partial class PartyUserControl : UserControlBase
     {
-        public PartyUserControl()
-        {
-            InitializeComponent();
-        }
 
-        private void btnNew_Click(object sender, RoutedEventArgs e)
-        {
-            //Affiche l'userControl de creationdePartie
-            this.Content = new createPartyUserControl();
-        }
+        private Party party;
 
-        private void btnStart_Click(object sender, RoutedEventArgs e)
+        public Party Party
         {
-            //Get Parti en test si existence personnage
-            if (true)
+            get { return party; }
+            set
             {
-                //Test si existence de donjon en court 
-                if (true)
-                {
-                    //Si oui arriver sur la page du donjon en question
-                }
-                //SiNon arriver sur la page de lancerment de jeux
+                party = value;
+                base.OnPropertyChanged("Party");
             }
         }
 
-        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        public PartyUserControl()
         {
-            //TODO Delete en base de la partie en question ( getid)
+            InitializeComponent();
+            base.DataContext = this;
         }
+
+        //private void btnStart_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //Get Parti en test si existence personnage
+        //    if (true)
+        //    {
+        //        //Test si existence de donjon en court 
+        //        if (true)
+        //        {
+        //            //Si oui arriver sur la page du donjon en question
+        //        }
+        //        //SiNon arriver sur la page de lancerment de jeux
+        //    }
+        //}
+
+        //private void btnDelete_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //TODO Delete en base de la partie en question ( getid)
+        //}
     }
 }

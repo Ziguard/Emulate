@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Emulate.entities;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,23 @@ namespace Emulate.views.usercontrols.listusercontrols
     /// </summary>
     public partial class ListPartyUserControl : UserControl
     {
+        public ListView ItemsList { get; set; }
+        public ObservableCollection<Party> Obs { get; set; }
         public ListPartyUserControl()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            Obs = new ObservableCollection<Party>();
+            this.itemList.ItemsSource = Obs;
+            this.ItemsList = this.itemList;
+        }
+
+        public void LoadItem(List<Party> items)
+        {
+            Obs.Clear();
+            foreach (var item in items)
+            {
+                Obs.Add(item);
+            }
         }
     }
 }

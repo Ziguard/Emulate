@@ -6,30 +6,46 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Emulate.entities
+
+
 {
     public class Personnage : BaseDBEntity
     {
-        private string nom;
-        private string classe;
-        private int ilvl;
+        private String nom;
+        private String classe;
+        private Int32 ilvl;
+
+        public Personnage()
+        {
+
+        }
 
         public int Ilvl
         {
             get { return ilvl; }
-            set { ilvl = value; }
+            set {
+                ilvl = value;
+                OnPropertyChanged("Ilvl");
+            }
         }
 
         public string Nom
         {
             get { return nom; }
-            set { nom = value; }
+            set {
+                nom = value;
+                OnPropertyChanged("Nom");
+            }
         }
 
         public string Classe
         {
             get { return classe; }
 
-            set { classe = value; }
+            set {
+                classe = value;
+                OnPropertyChanged("Classes");
+            }
         }
     }
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\
+D:\Dev\Projects\Emulate\Emulate\obj\Debug\
 Emulate
 none
 false
 DEBUG;TRACE
-D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\App.xaml
-7-1689134949
+D:\Dev\Projects\Emulate\Emulate\App.xaml
+8319674695
 
-36347999599
-201840711790
-Application.xaml;views\administration\AdministrationViews.xaml;views\game\CreateCharViews.xaml;views\game\ChoosePartyViews.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\usercontrols\createPartyUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;
+40200536368
+20931610527
+Application.xaml;views\administration\AdministrationViews.xaml;views\game\CreatePartyViews.xaml;views\game\ChoosePartyViews.xaml;views\game\CreateCharViews.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\usercontrols\CharUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;
 
 False
 

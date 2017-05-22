@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.viewsmodel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,16 +14,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Emulate.views.administration
+namespace Emulate.views.game
 {
     /// <summary>
     /// Logique d'interaction pour PartyAdmin.xaml
     /// </summary>
-    public partial class PartyAdmin : Page
+    public partial class CreatePartyViews : Page
     {
-        public PartyAdmin()
+        public CreatePartyViews()
         {
             InitializeComponent();
+            this.DataContext = new CreatePartyAdminVM(this);
+        }
+
+        //Charger d'un autre VM
+        public CreatePartyViews(ChoosePartyAdminVM partyAdminVM)
+        {
+            InitializeComponent();
+            this.DataContext = partyAdminVM;
+            partyAdminVM.LoadCreatePartyPage(this);
         }
     }
 }

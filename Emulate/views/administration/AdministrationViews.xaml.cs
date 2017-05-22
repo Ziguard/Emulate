@@ -25,9 +25,6 @@ namespace Emulate.views.administration
         public AdministrationViews()
         {
             InitializeComponent();
-            //Party party = new Party();
-            //party.Name = "First Party";
-            //Personnage personnage = new Personnage();
         }
 
         private void btnPlayer_Click(object sender, RoutedEventArgs e)

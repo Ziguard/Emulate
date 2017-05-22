@@ -104,22 +104,27 @@
     <Compile Include="logger\Logger.cs" />
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
-    <Compile Include="viewsmodel\ChossePartyAdminVM.cs" />
+    <Compile Include="viewsmodel\ChoosePartyAdminVM.cs" />
+    <Compile Include="viewsmodel\CreatePartyAdminVM.cs" />
+    <Compile Include="viewsmodel\PersonnageAdminVM.cs" />
     <Compile Include="views\administration\AdministrationViews.xaml.cs">
       <DependentUpon>AdministrationViews.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\game\CreateCharViews.xaml.cs">
-      <DependentUpon>CreateCharViews.xaml</DependentUpon>
+    <Compile Include="views\game\CreatePartyViews.xaml.cs">
+      <DependentUpon>CreatePartyViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\game\ChoosePartyViews.xaml.cs">
       <DependentUpon>ChoosePartyViews.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\game\CreateCharViews.xaml.cs">
+      <DependentUpon>CreateCharViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\base\UserControlBase.cs" />
     <Compile Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml.cs">
       <DependentUpon>ListPartyUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\createPartyUserControl.xaml.cs">
-      <DependentUpon>createPartyUserControl.xaml</DependentUpon>
+    <Compile Include="views\usercontrols\usercontrols\CharUserControl.xaml.cs">
+      <DependentUpon>CharUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\PartyUserControl.xaml.cs">
       <DependentUpon>PartyUserControl.xaml</DependentUpon>
@@ -140,19 +145,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\game\CreateCharViews.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="views\game\CreatePartyViews.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="views\game\ChoosePartyViews.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\game\CreateCharViews.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\createPartyUserControl.xaml">
+    <Page Include="views\usercontrols\usercontrols\CharUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

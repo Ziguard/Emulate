@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" >
     <Grid>
-        <Canvas  >
-            <Image Source="D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\imageEmulate\Start.jpg"/>
+        <Canvas>
+            <Image Source=".\imageEmulate\Start.jpg" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         </Canvas>
         <Grid>
             <Grid.ColumnDefinitions>

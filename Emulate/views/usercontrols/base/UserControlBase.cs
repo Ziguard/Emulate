@@ -17,6 +17,7 @@ namespace Emulate.views.usercontrols
             PropertyChangedEventHandler handler = PropertyChanged;
 
             if (handler != null)
+
             {
                 handler(this, new PropertyChangedEventArgs(name));
             }
