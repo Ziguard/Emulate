@@ -19,7 +19,7 @@ namespace Emulate.database
         public DbSet<Items> ItemsTable { get; set; }
 
         public DbSet<Party> PartyTable { get; set; }
-        public DbSet<Classe> ClasseTable { get; set; }
+        //public DbSet<Classe> ClasseTable { get; set; }
         public DbSet<Personnage> PersonnageTable { get; set; }
         public DbSet<Boss> BossTable { get; set; }
         public DbSet<Donjon> DonjonTable { get; set; }
@@ -46,11 +46,11 @@ namespace Emulate.database
                     PartyTable.Add(generatorParty.GenerateItem());
                 }
 
-                EntityGenerator<Classe> generatorClasse = new EntityGenerator<Classe>();
-                for (int i = 0; i < 20; i++)
-                {
-                    ClasseTable.Add(generatorClasse.GenerateItem());
-                }
+                //EntityGenerator<Classe> generatorClasse = new EntityGenerator<Classe>();
+                //for (int i = 0; i < 20; i++)
+                //{
+                //    ClasseTable.Add(generatorClasse.GenerateItem());
+                //}
 
                 EntityGenerator<Personnage> generatorPersonnage = new EntityGenerator<Personnage>();
                 for (int i = 0; i < 10; i++)

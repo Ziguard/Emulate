@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Emulate.views.usercontrols
+namespace Emulate.views.game
 {
     /// <summary>
-    /// Logique d'interaction pour ListClasseUserControl.xaml
+    /// Logique d'interaction pour PlayViews.xaml
     /// </summary>
-    public partial class ListClasseUserControl : UserControl
+    public partial class PlayViews : Page
     {
-        public ListClasseUserControl()
+        public PlayViews()
         {
             InitializeComponent();
         }

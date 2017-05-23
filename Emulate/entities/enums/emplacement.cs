@@ -7,16 +7,3 @@
         DOS,
     }
 }
-
-
-
-//public enum Emplacement
-//{
-//    ANNEAU,
-//    CASQUE,
-//    COU,
-//    DOS,
-//    EPAULIERE,
-//    MAINS,
-//    TORSE, 
-//}

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Dev\Projects\Emulate\Emulate\App.xaml
-8319674695
+121612405959
 
-44-1022118408
+50817978108
 20931610527
-Application.xaml;views\administration\AdministrationViews.xaml;views\game\CreatePartyViews.xaml;views\game\ChoosePartyViews.xaml;views\game\CreateCharViews.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\usercontrols\CharUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;
+Application.xaml;views\administration\AdministrationViews.xaml;views\game\CreatePartyViews.xaml;views\game\ChoosePartyViews.xaml;views\game\CreateCharViews.xaml;views\game\PlayViews.xaml;views\usercontrols\listusercontrols\ListDonjonUserControl.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml;views\usercontrols\usercontrols\CharUserControl.xaml;views\usercontrols\usercontrols\DonjonUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;
 
-True
+False
 

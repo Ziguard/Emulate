@@ -1,4 +1,5 @@
 ﻿using Emulate.entities.bases;
+using Emulate.entities.enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Emulate.entities
     public class Personnage : BaseDBEntity
     {
         private String nom;
-        private String classe;
+        private Classes classes;
         private Int32 ilvl;
 
         public Personnage()
@@ -38,12 +39,12 @@ namespace Emulate.entities
             }
         }
 
-        public string Classe
+        public Classes Classes
         {
-            get { return classe; }
+            get { return classes; }
 
             set {
-                classe = value;
+                classes = value;
                 OnPropertyChanged("Classes");
             }
         }

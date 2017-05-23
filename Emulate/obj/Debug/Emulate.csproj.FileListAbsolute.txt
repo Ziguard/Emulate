@@ -64,7 +64,6 @@ D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.Properties.Resources.resources
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.csproj.GenerateResource.Cache
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.exe
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.pdb
-D:\Dev\Projects\Emulate\Emulate\obj\Debug\Emulate.csprojResolveAssemblyReference.cache
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\game\CreatePartyViews.g.cs
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\game\CreateCharViews.g.cs
 D:\Dev\Projects\Emulate\Emulate\obj\Debug\views\usercontrols\usercontrols\CharUserControl.g.cs

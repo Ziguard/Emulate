@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,23 @@ namespace Emulate.views.usercontrols.usercontrols
     /// <summary>
     /// Logique d'interaction pour DonjonUserControl.xaml
     /// </summary>
-    public partial class DonjonUserControl : UserControl
+    public partial class DonjonUserControl : UserControlBase
     {
+        private Donjon donjon;
+
+        public Donjon Donjon
+        {
+            get { return donjon; }
+            set { donjon = value;
+                base.OnPropertyChanged("Donjon");
+            }
+
+        }
+
         public DonjonUserControl()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Emulate.entities.items.basesItems
 {
-    public class basesItems : BaseDBEntity
+    public class basesItems : BaseEntity
     {
         string nom;
         Enum type;

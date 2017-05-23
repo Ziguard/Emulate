@@ -39,7 +39,7 @@
                         </Grid.RowDefinitions>
 
                         <Label x:Name="lblNameParty" Grid.Column="0" Grid.Row="0" />
-                        <TextBlock x:Name="txtNameParty" TextWrapping="Wrap" Text="{Binding NameParty, Mode=TwoWay}" Grid.Column="1" Grid.Row="0"/>
+                        <TextBlock x:Name="txtNameParty" TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}" Grid.Column="1" Grid.Row="0"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

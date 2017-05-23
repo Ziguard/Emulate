@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.entities.bases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,49 @@ using System.Threading.Tasks;
 
 namespace Emulate.entities
 {
-    public class Donjon
+    public class Donjon : BaseDBEntity
     {
-        String Nom;
-        List<Boss> ListeBoss;
+        String nom;
+        List<Boss> listeBoss;
+
+        public Donjon()
+        {
+
+        }
+
+        public string Nom
+        {
+            get
+            {
+                return nom;
+            }
+
+            set
+            {
+                nom = value;
+                OnPropertyChanged("Nom");
+
+            }
+        }
+
+        public List<Boss> ListeBoss
+        {
+            get
+            {
+                return listeBoss;
+            }
+
+            set
+            {
+                listeBoss = value;
+                OnPropertyChanged("ListeBoss");
+            }
+        }
+
+
+
+
+
+
     }
 }

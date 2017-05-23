@@ -1,9 +1,10 @@
-﻿<local:UserControlBase x:Class="Emulate.views.usercontrols.usercontrols.CharUserControl"
+﻿<local:UserControlBase
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Emulate.views.usercontrols"
+             xmlns:enums="clr-namespace:Emulate.entities.enums" x:Class="Emulate.views.usercontrols.usercontrols.CharUserControl"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
@@ -16,7 +17,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox x:Name="tbtNameClasse" Grid.Column="0" Grid.Row="0"/>
-        <ComboBox x:Name="cmbClasse" Grid.Column="0" Grid.Row="1"/>
+        <ComboBox x:Name="cmbClasse" Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Source={enums:EnumBindingSource {x:Type enums:Classes}}}"/>
         <Button x:Name="btnCreate" Content="Create" Grid.Column="0" Grid.Row="2" />
     </Grid>
 </local:UserControlBase>

@@ -11,6 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Controls;
+using Emulate.database.entitieslinks;
+using Emulate.entities.enums;
 
 namespace Emulate.viewsmodel
 {
@@ -24,7 +27,7 @@ namespace Emulate.viewsmodel
         private Personnage currentPersonnage;
         
 
-        private MySQLManager<Party> partyManager = new MySQLManager<Party>();
+        private MySQLPartyManager partyManager = new MySQLPartyManager();
         private MySQLManager<Personnage> personnageManager = new MySQLManager<Personnage>();
 
         public ChoosePartyAdminVM(ChoosePartyViews chooseAdmin)
@@ -37,7 +40,7 @@ namespace Emulate.viewsmodel
         
         private async void InitLUC()
         {
-            //this.chooseAdmin.UCListParty.LoadItem((await partyManager.Get()).ToList());
+            this.chooseAdmin.UCListParty.LoadItem((await partyManager.Get()).ToList());
         }
 
 
@@ -54,12 +57,29 @@ namespace Emulate.viewsmodel
             //Affiche l'userControl de creationdePartie
             this.chooseAdmin.UCParty.btnNew.Click += BtnNew_Click;
             this.chooseAdmin.UCParty.btnStart.Click += BtnStart_Click;
+            this.chooseAdmin.UCListParty.ItemsList.SelectionChanged += ItemsList_SelectionChanged;
+        }
+
+        private void ItemsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Party item = (e.AddedItems[0] as Party);
+            currentParty = item;
+            //partyManager.GetGroupe(currentParty);
+            
+            //this.chooseAdmin.UCParty.Party = currentParty;
+            //this.chooseAdmin.UCParty.Party.Groupe = currentParty.Groupe;
         }
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
+
             currentParty = this.chooseAdmin.UCParty.Party;
-            
+            List<Personnage> groupe =  new List<Personnage>();
+            Personnage personnage = new Personnage();
+            personnage.Classes = Classes.HUNT;
+            personnage.Nom = "Ziguard";
+            groupe.Add(personnage);
+            currentParty.Groupe = groupe;
 
             if (currentParty.Groupe == null)
             {
@@ -67,6 +87,10 @@ namespace Emulate.viewsmodel
             }
             else
             {
+                //Affichage Fenetre de jeux
+                this.chooseAdmin.NavigationService.Navigate(new PlayViews(this));
+
+
                 //await personnageManager.Get(currentPersonnage.Id);
                 //TEST Si mission
                 //Affichage de la mission en courts()

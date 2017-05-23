@@ -82,10 +82,12 @@
     </ApplicationDefinition>
     <Compile Include="commandworker\CommandWorker.cs" />
     <Compile Include="commandworker\ManualResetAction.cs" />
+    <Compile Include="database\entitieslinks\MySQLPartyManager.cs" />
     <Compile Include="entities\bases\BaseDBEntity.cs" />
     <Compile Include="entities\bases\BaseEntity.cs" />
     <Compile Include="entities\ConnectionString.cs" />
     <Compile Include="entities\enums\Emplacement.cs" />
+    <Compile Include="entities\enums\EnumBindingSourceExtension.cs" />
     <Compile Include="entities\generator\EntityGenerator.cs" />
     <Compile Include="entities\generator\TypeEnum.cs" />
     <Compile Include="entities\items\basesItems\basesItems.cs" />
@@ -94,7 +96,7 @@
     <Compile Include="entities\party\Party.cs" />
     <Compile Include="entities\quest\Boss.cs" />
     <Compile Include="entities\quest\Donjon.cs" />
-    <Compile Include="entities\player\Classe.cs" />
+    <Compile Include="entities\enums\Classe.cs" />
     <Compile Include="entities\player\Personnage.cs" />
     <Compile Include="database\MySQLFullDB.cs" />
     <Compile Include="database\MySQLManager.cs" />
@@ -119,12 +121,24 @@
     <Compile Include="views\game\CreateCharViews.xaml.cs">
       <DependentUpon>CreateCharViews.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\game\PlayViews.xaml.cs">
+      <DependentUpon>PlayViews.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\usercontrols\base\UserControlBase.cs" />
+    <Compile Include="views\usercontrols\listusercontrols\ListDonjonUserControl.xaml.cs">
+      <DependentUpon>ListDonjonUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml.cs">
       <DependentUpon>ListPartyUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml.cs">
+      <DependentUpon>ListPersonnageUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\usercontrols\usercontrols\CharUserControl.xaml.cs">
       <DependentUpon>CharUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\DonjonUserControl.xaml.cs">
+      <DependentUpon>DonjonUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\PartyUserControl.xaml.cs">
       <DependentUpon>PartyUserControl.xaml</DependentUpon>
@@ -157,13 +171,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="views\game\PlayViews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\listusercontrols\ListDonjonUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="views\usercontrols\usercontrols\CharUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\DonjonUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="views\usercontrols\usercontrols\PartyUserControl.xaml">
       <SubType>Designer</SubType>
@@ -198,8 +228,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="imageEmulate\" />
+    <Resource Include="imageEmulate\DJ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageEmulate\Start.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
