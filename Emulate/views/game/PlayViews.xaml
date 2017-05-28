@@ -7,10 +7,26 @@
       xmlns:UC="clr-namespace:Emulate.views.usercontrols.usercontrols"
       xmlns:LUC="clr-namespace:Emulate.views.usercontrols.listusercontrols"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="600" d:DesignWidth="600"
       Title="PlayViews">
-
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*" />
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="22*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnDonjon" Content="Lancer Donjon" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label x:Name="lblGestionPersonnage" Content="Gestion Personnage" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <LUC:ListPersonnageUserControl x:Name="UCListPersonnage" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" />
+        <LUC:ListDonjonUserControl x:Name="UCListDonjon" Grid.Column="3" Grid.Row="1" Grid.RowSpan="4"/>
+        <UC:PersonnageUserControl x:Name="UCPersonnage" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <LUC:ListItemsBagUserControl x:Name="UCListItemsSac" Grid.Column="1" Grid.Row="5"/>
     </Grid>
 </Page>

@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 using Emulate.database;
 using Emulate.entities;
 
-namespace Emulate.views.usercontrols
+namespace Emulate.views.usercontrols.listusercontrols
 {
     /// <summary>
     /// Logique d'interaction pour ListPersonnageUserControl.xaml
@@ -29,17 +29,38 @@ namespace Emulate.views.usercontrols
         #region properties
         public ListView ItemsList { get; set; }
         public ObservableCollection<Personnage> Obs { get; set; }
-        #endregion
 
+        #endregion        
 
-
+        #region constructor
         public ListPersonnageUserControl()
         {
             this.InitializeComponent();
             Obs = new ObservableCollection<Personnage>();
-            this.ItemsList.ItemsSource = Obs;
-            this.ItemsList = this.ItemsList;
+            this.itemList.ItemsSource = Obs;
+            this.ItemsList = this.itemList;
             this.ItemsList.SelectionMode = SelectionMode.Single;
+        } 
+        #endregion
+
+        public void LoadItems(List<Personnage> items)
+        {
+            Obs.Clear();
+            foreach (var item in items)
+            {
+                Obs.Add(item);
+            }
         }
+
+        public void AddItem(Personnage item)
+        {
+            Obs.Add(item);
+        }
+
+        public void RemoveItem(Personnage item)
+        {
+            Obs.Remove(item);
+        }
+
     }
 }

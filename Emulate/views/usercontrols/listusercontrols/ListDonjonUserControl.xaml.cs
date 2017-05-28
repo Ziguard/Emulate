@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 using Emulate.database;
 using Emulate.entities;
 
-namespace Emulate.views.usercontrols
+namespace Emulate.views.usercontrols.listusercontrols
 {
     /// <summary>
     /// Logique d'interaction pour ListAddressUserControl.xaml

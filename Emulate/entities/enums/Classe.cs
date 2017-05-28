@@ -9,6 +9,6 @@
         PRIEST,
         PALADIN,
         DEATHKNIGHT,
-        HUNT,
+        HUNT
     }
 }

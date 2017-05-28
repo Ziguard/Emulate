@@ -9,40 +9,55 @@ namespace Emulate.entities
 {
     public class Boss : BaseDBEntity
     {
-        String nom;
-        List<Items> listeLoot;
+        String name;
+        List<Items> listLoot;
+        TimeSpan tempsDonjon;
 
         public Boss()
         {
-
+            this.listLoot = new List<Items>();
         }
 
 
-        public String Nom
+        public String Name
         {
             get
             {
-                return nom;
+                return name;
             }
 
             set
             {
-                nom = value;
-                OnPropertyChanged("Nom");
+                name = value;
+                OnPropertyChanged("Name");
             }
         }
 
-        public List<Items> ListeLoot
+        public List<Items> ListLoot
         {
             get
             {
-                return listeLoot;
+                return listLoot;
             }
 
             set
             {
-                listeLoot = value;
-                OnPropertyChanged("ListeLoot");
+                listLoot = value;
+                OnPropertyChanged("ListLoot");
+            }
+        }
+
+        public TimeSpan TempsDonjon
+        {
+            get
+            {
+                return tempsDonjon;
+            }
+
+            set
+            {
+                tempsDonjon = value;
+                OnPropertyChanged("TempsDonjon");
             }
         }
     }

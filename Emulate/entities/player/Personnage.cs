@@ -2,6 +2,7 @@
 using Emulate.entities.enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,10 @@ namespace Emulate.entities
 {
     public class Personnage : BaseDBEntity
     {
-        private String nom;
+        private String name;
         private Classes classes;
         private Int32 ilvl;
+        private Party party;
 
         public Personnage()
         {
@@ -30,12 +32,12 @@ namespace Emulate.entities
             }
         }
 
-        public string Nom
+        public string Name
         {
-            get { return nom; }
+            get { return name; }
             set {
-                nom = value;
-                OnPropertyChanged("Nom");
+                name = value;
+                OnPropertyChanged("Name");
             }
         }
 
@@ -46,6 +48,15 @@ namespace Emulate.entities
             set {
                 classes = value;
                 OnPropertyChanged("Classes");
+            }
+        }
+
+        public Party Party
+        {
+            get { return party; }
+            set {
+                party = value;
+                OnPropertyChanged("Party");   
             }
         }
     }

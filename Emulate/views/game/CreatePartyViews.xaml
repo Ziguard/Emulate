@@ -18,7 +18,8 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBox x:Name="txtBStreet" Text="{Binding Address.Street, Mode=TwoWay}" TextWrapping="Wrap" Grid.Column="0" Grid.Row="1"/>
+        <Label x:Name="lblNameParty" Content="Choisisez le Nom de la Partie" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" />
+        <TextBox x:Name="txtBPartyName" Text="{Binding Party.Name, Mode=TwoWay}" TextWrapping="Wrap" Grid.Column="0" Grid.Row="1"/>
         <Button x:Name="btnValidate" Content="Save" Grid.Column="0" Grid.Row="2"/>
 
         

@@ -15,7 +15,15 @@ namespace Emulate.database.entitieslinks
             bool isDetached = this.Entry(party).State == EntityState.Detached;
             if (isDetached)
                 this.DbSetT.Attach(party);
-            this.Entry(party).Reference(x => x.Groupe).Load();
+            this.Entry(party).Collection(x => x.Personnages).Load();
+        }
+
+        public void GetBag(Party party)
+        {
+            bool isDetached = this.Entry(party).State == EntityState.Detached;
+            if (isDetached)
+                this.DbSetT.Attach(party);
+            this.Entry(party).Collection(x => x.Bag).Load();
         }
     }
 }

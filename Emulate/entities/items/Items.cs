@@ -13,6 +13,8 @@ namespace Emulate.entities
         private Int32 ilvl;
         private String name;
         private Emplacement emplacement;
+        private Boss boss;
+        private Party party;
 
         public Items()
         {
@@ -58,6 +60,34 @@ namespace Emulate.entities
             {
                 emplacement = value;
                 OnPropertyChanged("Emplacement");
+            }
+        }
+
+        public Boss Boss
+        {
+            get
+            {
+                return boss;
+            }
+
+            set
+            {
+                boss = value;
+                OnPropertyChanged("Boss");
+            }
+        }
+
+        public Party Party
+        {
+            get
+            {
+                return party;
+            }
+
+            set
+            {
+                party = value;
+                OnPropertyChanged("Party");
             }
         }
     }

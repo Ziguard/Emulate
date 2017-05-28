@@ -29,8 +29,7 @@ namespace Emulate.views.usercontrols.usercontrols
             get { return personnage; }
             set {
                 personnage = value;
-                base.OnPropertyChanged("Personnage");
-                }
+                base.OnPropertyChanged("Personnage"); }
         }
 
         public CharUserControl()

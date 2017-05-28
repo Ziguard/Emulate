@@ -15,7 +15,7 @@ namespace Emulate.database
     [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class MySQLManager<TEntity> : DbContext where TEntity : class
     {
-        Logger logger = new Logger("MySQLManagerLogger",LogMode.CURRENT_FOLDER,AlertMode.MESSAGE_BOX);
+        Logger logger = new Logger("MySQLManagerLogger",LogMode.CURRENT_FOLDER,AlertMode.CONSOLE);
         public MySQLManager()
             : base(JsonManager.Instance.ReadFile<ConnectionString>(@"..\..\..\jsonconfig\", @"MysqlConfig.json").ToString())
 

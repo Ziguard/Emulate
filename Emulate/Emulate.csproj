@@ -82,6 +82,7 @@
     </ApplicationDefinition>
     <Compile Include="commandworker\CommandWorker.cs" />
     <Compile Include="commandworker\ManualResetAction.cs" />
+    <Compile Include="database\entitieslinks\MySQLDonjonManager.cs" />
     <Compile Include="database\entitieslinks\MySQLPartyManager.cs" />
     <Compile Include="entities\bases\BaseDBEntity.cs" />
     <Compile Include="entities\bases\BaseEntity.cs" />
@@ -90,7 +91,6 @@
     <Compile Include="entities\enums\EnumBindingSourceExtension.cs" />
     <Compile Include="entities\generator\EntityGenerator.cs" />
     <Compile Include="entities\generator\TypeEnum.cs" />
-    <Compile Include="entities\items\basesItems\basesItems.cs" />
     <Compile Include="entities\items\Items.cs" />
     <Compile Include="entities\json\JsonManager.cs" />
     <Compile Include="entities\party\Party.cs" />
@@ -106,11 +106,18 @@
     <Compile Include="logger\Logger.cs" />
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
-    <Compile Include="viewsmodel\ChoosePartyAdminVM.cs" />
-    <Compile Include="viewsmodel\CreatePartyAdminVM.cs" />
-    <Compile Include="viewsmodel\PersonnageAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\AdministrationAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\PartyAdminVM.cs" />
+    <Compile Include="viewsmodel\game\ChoosePartyAdminVM.cs" />
+    <Compile Include="viewsmodel\game\CreatePartyAdminVM.cs" />
+    <Compile Include="viewsmodel\game\DonjonStratAdminVM.cs" />
+    <Compile Include="viewsmodel\game\PersonnageAdminVM.cs" />
+    <Compile Include="viewsmodel\game\PlayAdminVM.cs" />
     <Compile Include="views\administration\AdministrationViews.xaml.cs">
       <DependentUpon>AdministrationViews.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\PartyAdminV.xaml.cs">
+      <DependentUpon>PartyAdminV.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\game\CreatePartyViews.xaml.cs">
       <DependentUpon>CreatePartyViews.xaml</DependentUpon>
@@ -121,18 +128,33 @@
     <Compile Include="views\game\CreateCharViews.xaml.cs">
       <DependentUpon>CreateCharViews.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\game\DonjonStartViews.xaml.cs">
+      <DependentUpon>DonjonStartViews.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\game\PlayViews.xaml.cs">
       <DependentUpon>PlayViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\base\UserControlBase.cs" />
+    <Compile Include="views\usercontrols\listusercontrols\ListBossUserControl.xaml.cs">
+      <DependentUpon>ListBossUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\usercontrols\listusercontrols\ListDonjonUserControl.xaml.cs">
       <DependentUpon>ListDonjonUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml.cs">
+      <DependentUpon>ListItemsBagUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\listusercontrols\ListItemsLootUserControl.xaml.cs">
+      <DependentUpon>ListItemsLootUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml.cs">
       <DependentUpon>ListPartyUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml.cs">
       <DependentUpon>ListPersonnageUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrolsAdmin\PartyUC.xaml.cs">
+      <DependentUpon>PartyUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\CharUserControl.xaml.cs">
       <DependentUpon>CharUserControl.xaml</DependentUpon>
@@ -142,6 +164,9 @@
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\PartyUserControl.xaml.cs">
       <DependentUpon>PartyUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\PersonnageUserControl.xaml.cs">
+      <DependentUpon>PersonnageUserControl.xaml</DependentUpon>
     </Compile>
     <Page Include="Application.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -159,6 +184,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\administration\PartyAdminV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\game\CreatePartyViews.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -171,13 +200,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="views\game\DonjonStartViews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\game\PlayViews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\listusercontrols\ListBossUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\usercontrols\listusercontrols\ListDonjonUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\listusercontrols\ListItemsLootUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml">
       <SubType>Designer</SubType>
@@ -186,6 +231,10 @@
     <Page Include="views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\usercontrols\usercontrolsAdmin\PartyUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\usercontrols\usercontrols\CharUserControl.xaml">
       <SubType>Designer</SubType>
@@ -196,6 +245,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="views\usercontrols\usercontrols\PartyUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\PersonnageUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -228,7 +281,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="imageEmulate\partylist.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="imageEmulate\DJ1.jpg" />
   </ItemGroup>

@@ -9,25 +9,27 @@ namespace Emulate.entities
 {
     public class Donjon : BaseDBEntity
     {
-        String nom;
+        String name;
         List<Boss> listeBoss;
+        TimeSpan temps;
+        Int32 ilvlLuck;
 
         public Donjon()
         {
-
+            this.listeBoss = new List<Boss>();
         }
 
-        public string Nom
+        public string Name
         {
             get
             {
-                return nom;
+                return name;
             }
 
             set
             {
-                nom = value;
-                OnPropertyChanged("Nom");
+                name = value;
+                OnPropertyChanged("Name");
 
             }
         }
@@ -46,10 +48,26 @@ namespace Emulate.entities
             }
         }
 
+        public TimeSpan Temps
+        {
+            get { return temps; }
 
+            set { temps = value;
+                OnPropertyChanged("Temps"); }
+        }
 
+        public int IlvlLuck
+        {
+            get
+            {
+                return ilvlLuck;
+            }
 
-
-
+            set
+            {
+                ilvlLuck = value;
+                OnPropertyChanged("IlvlLuck");
+            }
+        }
     }
 }

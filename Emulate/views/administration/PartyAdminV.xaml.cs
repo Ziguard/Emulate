@@ -12,17 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Emulate.viewsmodel.administration;
 
 namespace Emulate.views.administration
 {
     /// <summary>
-    /// Logique d'interaction pour ClassesAdmin.xaml
+    /// Logique d'interaction pour PartyAdminV.xaml
     /// </summary>
-    public partial class ClassesAdmin : Page
+    public partial class PartyAdminV : Page
     {
-        public ClassesAdmin()
+        private AdministrationAdminVM administrationAdminVM;
+
+        public PartyAdminV()
         {
             InitializeComponent();
+            this.DataContext = new PartyAdminVM(this);
+        }
+
+        public PartyAdminV(AdministrationAdminVM administrationAdminVM)
+        {
+            InitializeComponent();
+            this.DataContext = administrationAdminVM;
+            administrationAdminVM.LoadPartyAdminVM(this);
         }
     }
 }

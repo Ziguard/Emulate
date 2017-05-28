@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Emulate.viewsmodel.administration;
 
 namespace Emulate.views.administration
 {
@@ -21,52 +22,11 @@ namespace Emulate.views.administration
     /// Logique d'interaction pour AdministrationViews.xaml
     /// </summary>
     public partial class AdministrationViews : Page
-    {
+    {  
         public AdministrationViews()
         {
             InitializeComponent();
-        }
-
-        private void btnPlayer_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationWindow window = new NavigationWindow();
-            //window.Content = new PersonnageAdmin();
-            //window.Show();
-        }
-
-        private void btnClasse_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationWindow window = new NavigationWindow();
-            //window.Content = new ClassesAdmin();
-            //window.Show();
-        }
-
-        private void btnItems_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationWindow window = new NavigationWindow();
-            //window.Content = new ItemsAdmin();
-            //window.Show();
-        }
-
-        private void btnBoss_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationWindow window = new NavigationWindow();
-            //window.Content = new BossAdmin();
-            //window.Show();
-        }
-
-        private void btnDonjon_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationWindow window = new NavigationWindow();
-            //window.Content = new DonjonAdmin();
-            //window.Show();
-        }
-
-        private void btnPartie_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationWindow window = new NavigationWindow();
-            //window.Content = new PartyAdmin();
-            //window.Show();
+            this.DataContext = new AdministrationAdminVM(this);
         }
     }
 }

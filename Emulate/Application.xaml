@@ -7,21 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" >
     <Grid>
-        <Canvas>
-            <Image Source=".\imageEmulate\Start.jpg" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source=".\imageEmulate\Start.jpg" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
         </Canvas>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="11*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="22*"/>
+                <RowDefinition Height="11*"/>
+                <RowDefinition Height="11*"/>
+                <RowDefinition Height="22*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="Demarrer" Click="btnDemarrer_Click" Content="Jouer" Grid.Row="0" Grid.Column="1" Opacity="0.5" />
-            <Button x:Name="Administration" Click="btnAdministration_Click" Content="Administration"  Grid.Row="2" Grid.Column="1" Opacity="0.5" />
+                <Button x:Name="Demarrer" Click="btnDemarrer_Click" Content="Jouer" Grid.Row="1" Grid.Column="1" Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Button.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1B1717" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.OpacityMask>
+            </Button>
+            <Button x:Name="Administration" Click="btnAdministration_Click" Content="Administration"  Grid.Row="2" Grid.Column="1" Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         </Grid>
     </Grid>
 

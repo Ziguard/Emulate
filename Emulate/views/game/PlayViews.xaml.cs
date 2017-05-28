@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emulate.viewsmodel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,14 @@ namespace Emulate.views.game
         public PlayViews()
         {
             InitializeComponent();
+            this.DataContext = new PlayAdminVM(this);
+        }
+
+        public PlayViews(ChoosePartyAdminVM partyAdminVM)
+        {
+            InitializeComponent();
+            this.DataContext = partyAdminVM;
+            partyAdminVM.LoadPlayViews(this);
         }
     }
 }

@@ -31,22 +31,30 @@ namespace Emulate
             //Personnage personnage = new Personnage();
             //Boss boss = new Boss();
             //Donjon donjon = new Donjon();
-            MySQLFullDB zoodb = new MySQLFullDB();
+            //MySQLFullDB zoodb = new MySQLFullDB();
 
         }
 
+        /// <summary>
+        /// Demarrage du jeux
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDemarrer_Click(object sender, RoutedEventArgs e)
         {
-
             NavigationWindow window = new NavigationWindow();
             window.Content = new ChoosePartyViews();
             window.Show();
-            //this.Content = new ChoosePartyViews();
         }
 
+        /// <summary>
+        /// Partie Administration du jeux
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAdministration_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new Window();
+            Window window = new NavigationWindow();
             window.Content = new AdministrationViews();
             window.Show();
         }

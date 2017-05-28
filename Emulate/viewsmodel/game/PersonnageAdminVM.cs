@@ -19,19 +19,6 @@ namespace Emulate.viewsmodel
         public PersonnageAdminVM(CreateCharViews personnageAdmin)
         {
             this.personnageAdmin = personnageAdmin;
-
-            InitUC();
-            InitActions();
-        }
-
-        private void InitUC()
-        {
-
-        }
-
-        private void InitActions()
-        {
-
         }
     }
 }

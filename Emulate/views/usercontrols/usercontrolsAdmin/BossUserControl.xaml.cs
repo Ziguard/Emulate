@@ -18,7 +18,7 @@ namespace Emulate.views.usercontrols.usercontrols
     /// <summary>
     /// Logique d'interaction pour BossUserControl.xaml
     /// </summary>
-    public partial class BossUserControl : UserControl
+    public partial class BossUserControl : UserControlBase
     {
         public BossUserControl()
         {

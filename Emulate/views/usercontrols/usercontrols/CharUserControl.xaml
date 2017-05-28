@@ -4,7 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Emulate.views.usercontrols"
-             xmlns:enums="clr-namespace:Emulate.entities.enums" x:Class="Emulate.views.usercontrols.usercontrols.CharUserControl"
+             xmlns:enums="clr-namespace:Emulate.entities.enums" 
+             x:Class="Emulate.views.usercontrols.usercontrols.CharUserControl"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>

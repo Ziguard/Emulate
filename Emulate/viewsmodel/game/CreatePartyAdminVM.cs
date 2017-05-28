@@ -14,20 +14,12 @@ namespace Emulate.viewsmodel
 {
     class CreatePartyAdminVM
     {
-        private Party currentParty;
         private CreatePartyViews createPartyAdmin;
-        private MySQLManager<Party> partyManager = new MySQLManager<Party>();
+        //private MySQLManager<Party> partyManager = new MySQLManager<Party>();
 
         public CreatePartyAdminVM(CreatePartyViews createPartyAdmin)
         {
             this.createPartyAdmin = createPartyAdmin;
-
-            InitUC();
-        }
-
-        private void InitUC()
-        {
-            throw new NotImplementedException();
         }
     }
 }

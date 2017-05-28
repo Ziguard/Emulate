@@ -10,11 +10,14 @@ namespace Emulate.entities
     public class Party : BaseDBEntity
     {
         private String name;
-        private List<Personnage> groupe;
+        private List<Personnage> personnages;
+        private List<Items> bag;
+        private DateTime lastConnect;
 
         public Party()
         {
-
+            this.personnages = new List<Personnage>();
+            this.bag = new List<Items>();
         }
 
         public String Name
@@ -30,17 +33,38 @@ namespace Emulate.entities
             }
         }
 
-        public List<Personnage> Groupe
+        public List<Personnage> Personnages
         {
             get
             {
-                return this.groupe;
+                return this.personnages;
             }
             set
             {
-                this.groupe= value;
-                OnPropertyChanged("Groupe");
+                this.personnages = value;
+                OnPropertyChanged("Personnages");
             }
+        }
+
+        public List<Items> Bag
+        {
+            get
+            {
+                return this.bag;
+            }
+            set
+            {
+                this.bag = value;
+                OnPropertyChanged("Bag");
+            }
+        }
+
+        public DateTime LastConnect
+        {
+            get { return this.lastConnect; }
+            set {
+                this.lastConnect = value;
+                OnPropertyChanged("LastConnect"); }
         }
     }
 }

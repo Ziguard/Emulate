@@ -1,4 +1,5 @@
-﻿using Emulate.entities;
+﻿using Emulate.database;
+using Emulate.entities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,15 +25,19 @@ namespace Emulate.views.usercontrols.listusercontrols
     {
         public ListView ItemsList { get; set; }
         public ObservableCollection<Party> Obs { get; set; }
+        public MySQLManager<Party> partySQLManager;
+
         public ListPartyUserControl()
         {
             this.InitializeComponent();
+            partySQLManager = new MySQLManager<Party>();
             Obs = new ObservableCollection<Party>();
             this.itemList.ItemsSource = Obs;
             this.ItemsList = this.itemList;
+            this.ItemsList.SelectionMode = SelectionMode.Single;
         }
 
-        public void LoadItem(List<Party> items)
+        public void LoadItems(List<Party> items)
         {
             Obs.Clear();
             foreach (var item in items)
@@ -40,5 +45,10 @@ namespace Emulate.views.usercontrols.listusercontrols
                 Obs.Add(item);
             }
         }
+        public void AddItem(Party item)
+        {
+            Obs.Add(item);
+        }
+
     }
 }
