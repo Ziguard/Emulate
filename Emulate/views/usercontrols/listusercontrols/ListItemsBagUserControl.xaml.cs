@@ -27,14 +27,14 @@ namespace Emulate.views.usercontrols.listusercontrols
 
         #region properties
         public ListView ItemsList { get; set; }
-        public ObservableCollection<Items> Obs { get; set; }
+        public ObservableCollection<Loot> Obs { get; set; }
         #endregion
 
         #region constructor
         public ListItemsBagUserControl()
         {
             this.InitializeComponent();
-            Obs = new ObservableCollection<Items>();
+            Obs = new ObservableCollection<Loot>();
             this.itemList.ItemsSource = Obs;
             this.ItemsList = this.itemList;
             this.ItemsList.SelectionMode = SelectionMode.Single;
@@ -48,7 +48,7 @@ namespace Emulate.views.usercontrols.listusercontrols
         /// <summary>
         /// Current list for User items.
         /// </summary>
-        public void LoadItems(List<Items> items)
+        public void LoadItems(List<Loot> items)
         {
             Obs.Clear();
             foreach (var item in items)
@@ -57,12 +57,12 @@ namespace Emulate.views.usercontrols.listusercontrols
             }
         }
 
-        public void AddItem(Items item)
+        public void AddItem(Loot item)
         {
             Obs.Add(item);
         }
 
-        public void RemoveItem(Items item)
+        public void RemoveItem(Loot item)
         {
             Obs.Remove(item);
         }

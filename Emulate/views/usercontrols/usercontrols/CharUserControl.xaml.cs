@@ -22,9 +22,9 @@ namespace Emulate.views.usercontrols.usercontrols
     public partial class CharUserControl : UserControlBase
     {
 
-        private Personnage personnage;
+        private Character personnage;
 
-        public Personnage Personnage
+        public Character Personnage
         {
             get { return personnage; }
             set {

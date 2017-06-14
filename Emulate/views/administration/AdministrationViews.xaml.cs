@@ -22,7 +22,9 @@ namespace Emulate.views.administration
     /// Logique d'interaction pour AdministrationViews.xaml
     /// </summary>
     public partial class AdministrationViews : Page
-    {  
+    {
+        private Application application;
+
         public AdministrationViews()
         {
             InitializeComponent();

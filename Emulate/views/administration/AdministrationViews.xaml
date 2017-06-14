@@ -19,11 +19,17 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnItems"   Content="Items"     Grid.Row="0" Grid.Column="0" />
-        <Button x:Name="btnClasse"  Content="Classe"    Grid.Row="0" Grid.Column="1" />
-        <Button x:Name="btnPlayer"  Content="Player"    Grid.Row="0" Grid.Column="2" />
-        <Button x:Name="btnBoss"    Content="Boss"      Grid.Row="1" Grid.Column="0" />
-        <Button x:Name="btnDonjon"  Content="Donjon"    Grid.Row="1" Grid.Column="1" />
-        <Button x:Name="btnPartie"  Content="Partie"    Grid.Row="1" Grid.Column="2" />
+        <Button x:Name="btnPlayer"  Content="Player"    Grid.Row="0" Grid.Column="0" />
+        <Button x:Name="btnItems"   Content="Items"     Grid.Row="2" Grid.Column="0" />
+        <Button x:Name="btnPartie"  Content="Partie"    Grid.Row="1" Grid.Column="1" />
+
+        <Button x:Name="btnLoot"    Content="Loot"      Grid.Row="1" Grid.Column="3" />
+        
+        <Button x:Name="btnDonjon"  Content="Donjon"    Grid.Row="0" Grid.Column="2" />
+        <Button x:Name="btnBoss"    Content="Boss"      Grid.Row="2" Grid.Column="2" />
+
+        <Button x:Name="btnPrecedent" Content="GoBack"      Grid.Row="2" Grid.Column="1" />
+
+
     </Grid>
 </Page>

@@ -35,7 +35,7 @@ namespace Emulate.views.usercontrols.listusercontrols
         public ListBossUserControl()
         {
             InitializeComponent();
-            this.InitializeComponent();
+            //this.InitializeComponent();
             Obs = new ObservableCollection<Boss>();
             this.itemList.ItemsSource = Obs;
             this.ItemsList = this.itemList;

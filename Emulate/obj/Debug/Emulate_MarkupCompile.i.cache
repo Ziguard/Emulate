@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\App.xaml
-192017327759
+30-2109238285
 
-61778667634
+82-13180061
 201840711790
-Application.xaml;views\administration\AdministrationViews.xaml;views\administration\PartyAdminV.xaml;views\game\CreatePartyViews.xaml;views\game\ChoosePartyViews.xaml;views\game\CreateCharViews.xaml;views\game\DonjonStartViews.xaml;views\game\PlayViews.xaml;views\usercontrols\listusercontrols\ListBossUserControl.xaml;views\usercontrols\listusercontrols\ListDonjonUserControl.xaml;views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml;views\usercontrols\listusercontrols\ListItemsLootUserControl.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml;views\usercontrols\usercontrolsAdmin\PartyUC.xaml;views\usercontrols\usercontrols\CharUserControl.xaml;views\usercontrols\usercontrols\DonjonUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;views\usercontrols\usercontrols\PersonnageUserControl.xaml;
+Application.xaml;views\administration\AdministrationViews.xaml;views\administration\BossAdminV.xaml;views\administration\CharactersAdminV.xaml;views\administration\DonjonAdminV.xaml;views\administration\ItemsAdminV.xaml;views\administration\LootAdminV.xaml;views\administration\PartyAdminV.xaml;views\game\CreatePartyViews.xaml;views\game\ChoosePartyViews.xaml;views\game\CreateCharViews.xaml;views\game\DonjonStartViews.xaml;views\game\PlayViews.xaml;views\usercontrols\listusercontrols\ListBossUserControl.xaml;views\usercontrols\listusercontrols\ListDonjonUserControl.xaml;views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml;views\usercontrols\listusercontrols\ListItemsUserControl.xaml;views\usercontrols\listusercontrols\ListLootUserControl.xaml;views\usercontrols\listusercontrols\ListPartyUserControl.xaml;views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml;views\usercontrols\usercontrols\usercontrolsAdmin\BossUC.xaml;views\usercontrols\usercontrols\usercontrolsAdmin\CharUC.xaml;views\usercontrols\usercontrols\usercontrolsAdmin\DonjonUC.xaml;views\usercontrols\usercontrols\usercontrolsAdmin\ItemUC.xaml;views\usercontrols\usercontrols\usercontrolsAdmin\LootUC.xaml;views\usercontrols\usercontrols\usercontrolsAdmin\PartyUC.xaml;views\usercontrols\usercontrols\CharUserControl.xaml;views\usercontrols\usercontrols\DonjonUserControl.xaml;views\usercontrols\usercontrols\PartyUserControl.xaml;views\usercontrols\usercontrols\PersonnageUserControl.xaml;
 
-True
+False
 

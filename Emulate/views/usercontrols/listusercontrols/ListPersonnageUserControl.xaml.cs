@@ -28,7 +28,7 @@ namespace Emulate.views.usercontrols.listusercontrols
 
         #region properties
         public ListView ItemsList { get; set; }
-        public ObservableCollection<Personnage> Obs { get; set; }
+        public ObservableCollection<Character> Obs { get; set; }
 
         #endregion        
 
@@ -36,14 +36,14 @@ namespace Emulate.views.usercontrols.listusercontrols
         public ListPersonnageUserControl()
         {
             this.InitializeComponent();
-            Obs = new ObservableCollection<Personnage>();
+            Obs = new ObservableCollection<Character>();
             this.itemList.ItemsSource = Obs;
             this.ItemsList = this.itemList;
             this.ItemsList.SelectionMode = SelectionMode.Single;
         } 
         #endregion
 
-        public void LoadItems(List<Personnage> items)
+        public void LoadItems(List<Character> items)
         {
             Obs.Clear();
             foreach (var item in items)
@@ -52,12 +52,12 @@ namespace Emulate.views.usercontrols.listusercontrols
             }
         }
 
-        public void AddItem(Personnage item)
+        public void AddItem(Character item)
         {
             Obs.Add(item);
         }
 
-        public void RemoveItem(Personnage item)
+        public void RemoveItem(Character item)
         {
             Obs.Remove(item);
         }

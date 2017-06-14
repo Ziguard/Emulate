@@ -34,9 +34,13 @@ namespace Emulate.viewsmodel
         #region DefinitionEntities
 
         private Party currentParty;
-        private Personnage currentPersonnage;
+        private Character currentPersonnage;
         private Donjon currentDonjon;
-        private List<Personnage> currentGroupe;
+        private Boss currentBoss;
+        private Loot itemAddChar;
+
+        private Random randomBoss = new Random();
+
 
         #endregion
 
@@ -44,10 +48,13 @@ namespace Emulate.viewsmodel
 
         private MySQLPartyManager partyManager = new MySQLPartyManager();
         private MySQLDonjonManager donjonManager = new MySQLDonjonManager();
-        private MySQLManager<Personnage> personnageManager = new MySQLManager<Personnage>(); 
+        private MySQLBossManager bossManager = new MySQLBossManager();
+        private MySQLItemsManager itemsManager = new MySQLItemsManager();
+        private MySQLManager<Character> personnageManager = new MySQLManager<Character>();
+        private MySQLManager<Loot> lootManager = new MySQLManager<Loot>();
 
         #endregion
-        
+
         /// <summary>
         /// Lancement de la vue Choix Partie
         /// </summary>
@@ -70,7 +77,7 @@ namespace Emulate.viewsmodel
             currentParty = new Party();
             this.chooseAdmin.UCParty.Party = currentParty;
         }
-        
+
         /// <summary>
         /// Recupération des évenement
         /// </summary>
@@ -142,11 +149,11 @@ namespace Emulate.viewsmodel
         #region LogiquePourCreePersonnage
         internal void LoadCreateCharPage(CreateCharViews createCharViews)
         {
-            currentPersonnage = new Personnage();
+            currentPersonnage = new Character();
             this.createCharViews = createCharViews;
             InitCreatePersonnageActions();
         }
-        
+
         private void InitCreatePersonnageActions()
         {
             this.createCharViews.UCPersonnage.btnCreate.Click += BtnCreatePersonnage_Click;
@@ -176,6 +183,8 @@ namespace Emulate.viewsmodel
         #region LogiquePourPlayViews
         internal void LoadPlayViews(PlayViews playViews)
         {
+            partyManager.GetLoot(currentParty);
+
             this.playViews = playViews;
             InitLUCPersonnage();
             InitUCPersonnage();
@@ -192,11 +201,20 @@ namespace Emulate.viewsmodel
         {
             this.playViews.UCListPersonnage.ItemsList.SelectionChanged += ItemsListPersonnage_SelectionChanged;
             this.playViews.UCListDonjon.ItemsList.SelectionChanged += ItemsListDonjon_SelectionChanged;
+            this.playViews.UCListLootSac.ItemsList.SelectionChanged += ItemsListLoot_SelectionChanged;
             this.playViews.UCPersonnage.btnAnneau.Click += BtnAnneau_Click;
             this.playViews.UCPersonnage.btnCou.Click += BtnCou_Click;
             this.playViews.UCPersonnage.btnDos.Click += BtnDos_Click;
 
             this.playViews.btnDonjon.Click += BtnDonjon_Click;
+        }
+
+        private void ItemsListLoot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count >0)
+            {
+                itemAddChar = (e.AddedItems[0] as Loot);
+            }
         }
 
         private void ItemsListDonjon_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -220,29 +238,34 @@ namespace Emulate.viewsmodel
 
         }
 
-        private void BtnDos_Click(object sender, RoutedEventArgs e)
+        private async void BtnDos_Click(object sender, RoutedEventArgs e)
         {
-
+            Emplacement emplacement = Emplacement.DOS;
+             await EquiperDesequiper(emplacement);
         }
 
-        private void BtnCou_Click(object sender, RoutedEventArgs e)
-        {
 
+
+        private async void BtnCou_Click(object sender, RoutedEventArgs e)
+        {
+            Emplacement emplacement = Emplacement.CASQUE;
+            await EquiperDesequiper(emplacement);
         }
 
-        private void BtnAnneau_Click(object sender, RoutedEventArgs e)
+        private async void BtnAnneau_Click(object sender, RoutedEventArgs e)
         {
-
+            Emplacement emplacement = Emplacement.ANNEAU;
+            await EquiperDesequiper(emplacement);
         }
 
         private void ItemsListPersonnage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (e.AddedItems.Count > 0)
             {
-                currentPersonnage = (e.AddedItems[0] as Personnage);
+                currentPersonnage = (e.AddedItems[0] as Character);
                 this.playViews.UCPersonnage.Personnage = currentPersonnage;
                 //this.playViews.UCPersonnage..Content = currentPersonnage.Nom;
-                
+
                 //zooManager.GetAddress(currentZoo);
                 //zooManager.GetEmployees(currentZoo);
                 //zooManager.GetStructures(currentZoo);
@@ -255,16 +278,42 @@ namespace Emulate.viewsmodel
         private async void InitLUCPersonnage()
         {
             this.playViews.UCListPersonnage.LoadItems(currentParty.Personnages);
-            
+
+
+
             //Recuperation de la liste des item de la base de donnes via le manager
-            //this.playViews.UCListPersonnage.LoadItems((await personnageManager.Get()).ToList());
+            this.playViews.UCListLootSac.LoadItems(currentParty.Bag.ToList());
             this.playViews.UCListDonjon.LoadItems((await donjonManager.Get()).ToList());
+        }
+
+
+        private async Task EquiperDesequiper(Emplacement emplacement)
+        {
+            Loot itemAddBag = new Loot();
+
+            //currentPersonnage.Equipement (e => e)
+
+
+            foreach (Loot equiper in currentPersonnage.Equipement)
+            {
+                Items itemEquiper = await itemsManager.Get(equiper.ItemsId);
+
+                if (itemEquiper.Emplacement == emplacement)
+                {
+                    itemAddBag = equiper;
+                }
+                currentParty.Bag.Remove(itemAddChar);
+                currentPersonnage.Equipement.Add(itemAddChar);
+
+                currentParty.Bag.Add(itemAddBag);
+                currentPersonnage.Equipement.Remove(itemAddBag);
+            }
         }
 
         #endregion
 
 
-        #region LogiquePourDonjonStrat
+        #region LogiquePourDonjonStart
 
         internal void LoadDonjonStartPage(DonjonStartViews donjonStartViews)
         {
@@ -274,11 +323,24 @@ namespace Emulate.viewsmodel
             InitDonjonStartActions();
 
         }
+        private void InitDonjonStartLUC()
+        {
+            this.donjonStratViews.UCListBoss.LoadItems(currentDonjon.ListeBoss);
+        }
+
 
         private void InitDonjonStartActions()
         {
+            this.donjonStratViews.UCListBoss.ItemsList.SelectionChanged += ItemsListBoss_SelectionChanged;
             this.donjonStratViews.btnLancerQuete.Click += BtnLancerQuete_Click;
             this.donjonStratViews.btnCancel.Click += BtnCancel_Click;
+        }
+
+        private void ItemsListBoss_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            currentBoss = (e.AddedItems[0] as Boss);
+            bossManager.GetItems(currentBoss);
+            this.donjonStratViews.UCListLoot.LoadItems(currentBoss.ListLoot);
         }
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)
@@ -286,38 +348,57 @@ namespace Emulate.viewsmodel
             this.donjonStratViews.NavigationService.GoBack();
         }
 
+        /// <summary>
+        /// Permet de lancer un donjon et d'effectuer l'attribution des loot au sac du groupe si le donjon est terminé.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void BtnLancerQuete_Click(object sender, RoutedEventArgs e)
         {
-
-            //Todo si le precedent donjon est terminer lancer la fenetre de rand sur le booss
-            //foreach (Boss boos in currentDonjon.ListeBoss)
-            //{
-            //    //Lancer la Fenetre de rand.
-
-            //}
-            DateTime test = new DateTime();
-            lancementDonjon = DateTime.Now;
-            test = currentParty.LastConnect + currentDonjon.Temps;
-
-            if (test > lancementDonjon  )
+            //Test si le donjon lancer est terminer ou pas
+            if (currentParty.LastConnect > DateTime.Now)
             {
-                //retour a la playviews
-                this.donjonStratViews.NavigationService.GoBack();
-                MessageBox.Show("Un donjon est déjà en courts veuillez patienter", "Donjon in Progress", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                //Test si la partie contient bien un donjon lancer ou pas 
+                if (currentParty.DonjonLancerId != 0)
+                {
+                    //Si un donjon a été lancer récupère le donjon en question en base de donnée par rapports a l'id sauvegarder sur la partie.
+                    Donjon endDonjon = await donjonManager.Get(currentParty.DonjonLancerId);
+
+                    //Pour chaque boss de la liste du donjon effectue un rand sur la plage de loot et ajoute le loot en question a la liste d'item de la partie ( sac ) 
+                    foreach (Boss bossTuer in endDonjon.ListeBoss)
+                    {
+                        Items itemLoot = bossTuer.ListLoot[randomBoss.Next(0, bossTuer.ListLoot.Count())];
+                        Loot nouveauLoot = new Loot();
+                        nouveauLoot.ItemsId = itemLoot.Id;
+                        currentParty.Bag.Add(nouveauLoot);
+                    }
+                    //Lance le nouveau donjon selectionner
+                    await affectationDonjon();
+                }
+
+                else
+                {
+                    await affectationDonjon();
+                }
             }
             else
             {
-                currentParty.LastConnect = lancementDonjon;
-                await partyManager.Update(currentParty);
-
+                MessageBox.Show("Un donjon est déjà en courts veuillez patienter", "Donjon en court", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
-            
+
         }
 
-        private void InitDonjonStartLUC()
+        /// <summary>
+        /// Defini la date de fin du donjon et le sauvegarde sur la partie actuel.
+        /// </summary>
+        /// <returns></returns>
+        private async Task affectationDonjon()
         {
-            this.donjonStratViews.UCListBoss.LoadItems(currentDonjon.ListeBoss);
+            DateTime endTimeDonjon = DateTime.Now + currentDonjon.Temps;
+            currentParty.LastConnect = endTimeDonjon;
+            await partyManager.Update(currentParty);
         }
+
         #endregion
 
     }

@@ -15,8 +15,8 @@
                     <ContextMenu.BitmapEffect>
                         <BitmapEffectGroup/>
                     </ContextMenu.BitmapEffect>
-                    <MenuItem Header="Duplicate" x:Name="DuplicatePersonnageContextMenu" />
-                    <MenuItem Header="Remove" x:Name="RemovePersonnageContextMenu" />
+                    <MenuItem Header="Duplicate" x:Name="CMDuplicatePersonnage" />
+                    <MenuItem Header="Remove" x:Name="CMRemovePersonnage" />
                 </ContextMenu>
             </ListView.ContextMenu>
             <ListView.ItemsPanel>

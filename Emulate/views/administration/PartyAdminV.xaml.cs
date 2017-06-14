@@ -21,19 +21,10 @@ namespace Emulate.views.administration
     /// </summary>
     public partial class PartyAdminV : Page
     {
-        private AdministrationAdminVM administrationAdminVM;
-
         public PartyAdminV()
         {
             InitializeComponent();
             this.DataContext = new PartyAdminVM(this);
-        }
-
-        public PartyAdminV(AdministrationAdminVM administrationAdminVM)
-        {
-            InitializeComponent();
-            this.DataContext = administrationAdminVM;
-            administrationAdminVM.LoadPartyAdminVM(this);
         }
     }
 }

@@ -28,11 +28,6 @@ namespace Emulate
         public Application()
         {
             InitializeComponent();
-            //Personnage personnage = new Personnage();
-            //Boss boss = new Boss();
-            //Donjon donjon = new Donjon();
-            //MySQLFullDB zoodb = new MySQLFullDB();
-
         }
 
         /// <summary>
@@ -54,9 +49,9 @@ namespace Emulate
         /// <param name="e"></param>
         private void btnAdministration_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new NavigationWindow();
+            NavigationWindow window = new NavigationWindow();
             window.Content = new AdministrationViews();
-            window.Show();
+            window.Show();        
         }
     }
 }

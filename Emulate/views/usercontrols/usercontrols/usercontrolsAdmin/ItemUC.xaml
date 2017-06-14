@@ -1,0 +1,32 @@
+﻿<local:UserControlBase x:Class="Emulate.views.usercontrols.usercontrolsAdmin.ItemUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Emulate.views.usercontrols"
+             xmlns:enums="clr-namespace:Emulate.entities.enums"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="64*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblName" Content="Name" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,221,0" />
+        <TextBox x:Name="txtBName" Text="{Binding Items.Name, Mode=TwoWay}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="0" Margin="1,0"/>
+
+        <Label x:Name="lblIlvl" Content="Ilvl" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,221,0" />
+        <TextBox x:Name="txtIlvl" Text="{Binding Items.Ilvl, Mode=TwoWay}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="1" Margin="1,0"/>
+        
+        <Label x:Name="lblEmplacement" Content="Emplacement" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,221,0"/>
+        <ComboBox x:Name="emplacement" Text="{Binding Items.Emplacement , Mode=TwoWay}" ItemsSource="{Binding Source={enums:EnumBindingSource {x:Type enums:Emplacement}}}"    Grid.Column="1" Grid.Row="2" Height="30" Width="110"/>
+
+
+    </Grid>
+</local:UserControlBase>

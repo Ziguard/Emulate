@@ -30,6 +30,6 @@
         <Label x:Name="LabelListBoss" Content="Boss du Donjon" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label x:Name="LabelListItem" Content="Liste Loot" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <LUC:ListBossUserControl x:Name="UCListBoss" Grid.Column="0" Grid.Row="1" Grid.RowSpan="4"/>
-        <LUC:ListBossUserControl x:Name="UCListLoot" Grid.Column="3" Grid.Row="1" Grid.RowSpan="4"/>
+        <LUC:ListItemsUserControl x:Name="UCListLoot" Grid.Column="3" Grid.Row="1" Grid.RowSpan="4"/>
     </Grid>
 </Page>

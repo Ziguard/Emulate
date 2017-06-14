@@ -18,7 +18,7 @@ namespace Emulate.database.entitieslinks
             this.Entry(party).Collection(x => x.Personnages).Load();
         }
 
-        public void GetBag(Party party)
+        public void GetLoot(Party party)
         {
             bool isDetached = this.Entry(party).State == EntityState.Detached;
             if (isDetached)

@@ -10,6 +10,16 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Page1">
     <Grid>
-        <UC:CharUserControl x:Name="UCPersonnage" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblChar" Content="Veuillez crée votre personnage" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" FontWeight="Bold"/>
+        <UC:CharUserControl x:Name="UCPersonnage" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>

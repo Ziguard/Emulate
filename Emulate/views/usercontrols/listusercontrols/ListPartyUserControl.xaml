@@ -16,7 +16,7 @@
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="40*"/>
             </Grid.RowDefinitions>
-            <Label x:Name="lblListeParty" Content="Liste Parties" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" />
+            <Label x:Name="lblListeParty" Content="Liste Parties" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" FontWeight="Bold"/>
             <ListView x:Name="itemList" Opacity="0.5" Grid.Column="0" Grid.Row="1" 
                       ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
                       ScrollViewer.VerticalScrollBarVisibility="Auto">

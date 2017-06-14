@@ -1,0 +1,34 @@
+﻿<Page x:Class="Emulate.views.administration.LootAdminV"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Emulate.views.administration"
+      xmlns:UC="clr-namespace:Emulate.views.usercontrols.usercontrolsAdmin"
+      xmlns:LUC="clr-namespace:Emulate.views.usercontrols.listusercontrols"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="LootAdminV">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <UC:LootUC x:Name="UCLoot" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3"/>
+        <LUC:ListLootUserControl x:Name="LUCLoot" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
+        <LUC:ListItemsUserControl x:Name="LUCItems" Grid.Column="2" Grid.Row="0" Grid.RowSpan="4"/>
+        <StackPanel Grid.Row="3" Grid.Column="1">
+                <Button x:Name="btnNouveau" Content="Nouveau"/>
+                <Button x:Name="btnMettreAjour" Content="Maj"/>
+                <Button x:Name="btnSupprimer" Content="Supprimer"/>
+            </StackPanel>
+    </Grid>
+</Page>

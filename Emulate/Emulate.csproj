@@ -82,22 +82,27 @@
     </ApplicationDefinition>
     <Compile Include="commandworker\CommandWorker.cs" />
     <Compile Include="commandworker\ManualResetAction.cs" />
+    <Compile Include="database\entitieslinks\MySQLBossManager.cs" />
+    <Compile Include="database\entitieslinks\MySQLCharacterManager.cs" />
     <Compile Include="database\entitieslinks\MySQLDonjonManager.cs" />
+    <Compile Include="database\entitieslinks\MySQLItemsManager.cs" />
+    <Compile Include="database\entitieslinks\MySQLLootManager.cs" />
     <Compile Include="database\entitieslinks\MySQLPartyManager.cs" />
+    <Compile Include="entities\Loot.cs" />
     <Compile Include="entities\bases\BaseDBEntity.cs" />
     <Compile Include="entities\bases\BaseEntity.cs" />
-    <Compile Include="entities\ConnectionString.cs" />
+    <Compile Include="entities\tools\ConnectionString.cs" />
     <Compile Include="entities\enums\Emplacement.cs" />
     <Compile Include="entities\enums\EnumBindingSourceExtension.cs" />
     <Compile Include="entities\generator\EntityGenerator.cs" />
     <Compile Include="entities\generator\TypeEnum.cs" />
-    <Compile Include="entities\items\Items.cs" />
+    <Compile Include="entities\Items.cs" />
     <Compile Include="entities\json\JsonManager.cs" />
-    <Compile Include="entities\party\Party.cs" />
-    <Compile Include="entities\quest\Boss.cs" />
-    <Compile Include="entities\quest\Donjon.cs" />
+    <Compile Include="entities\Party.cs" />
+    <Compile Include="entities\Boss.cs" />
+    <Compile Include="entities\Donjon.cs" />
     <Compile Include="entities\enums\Classe.cs" />
-    <Compile Include="entities\player\Personnage.cs" />
+    <Compile Include="entities\Character.cs" />
     <Compile Include="database\MySQLFullDB.cs" />
     <Compile Include="database\MySQLManager.cs" />
     <Compile Include="entities\reflection\Reflectionner.cs" />
@@ -107,6 +112,11 @@
     <Compile Include="logger\Logger2.cs" />
     <Compile Include="logger\LogMode.cs" />
     <Compile Include="viewsmodel\administration\AdministrationAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\BossAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\CharactersAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\DonjonAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\ItemsAdminVM.cs" />
+    <Compile Include="viewsmodel\administration\LootAdminVM.cs" />
     <Compile Include="viewsmodel\administration\PartyAdminVM.cs" />
     <Compile Include="viewsmodel\game\ChoosePartyAdminVM.cs" />
     <Compile Include="viewsmodel\game\CreatePartyAdminVM.cs" />
@@ -115,6 +125,21 @@
     <Compile Include="viewsmodel\game\PlayAdminVM.cs" />
     <Compile Include="views\administration\AdministrationViews.xaml.cs">
       <DependentUpon>AdministrationViews.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\BossAdminV.xaml.cs">
+      <DependentUpon>BossAdminV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\CharactersAdminV.xaml.cs">
+      <DependentUpon>CharactersAdminV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\DonjonAdminV.xaml.cs">
+      <DependentUpon>DonjonAdminV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\ItemsAdminV.xaml.cs">
+      <DependentUpon>ItemsAdminV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\LootAdminV.xaml.cs">
+      <DependentUpon>LootAdminV.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\administration\PartyAdminV.xaml.cs">
       <DependentUpon>PartyAdminV.xaml</DependentUpon>
@@ -144,8 +169,11 @@
     <Compile Include="views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml.cs">
       <DependentUpon>ListItemsBagUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\listusercontrols\ListItemsLootUserControl.xaml.cs">
-      <DependentUpon>ListItemsLootUserControl.xaml</DependentUpon>
+    <Compile Include="views\usercontrols\listusercontrols\ListItemsUserControl.xaml.cs">
+      <DependentUpon>ListItemsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\listusercontrols\ListLootUserControl.xaml.cs">
+      <DependentUpon>ListLootUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\listusercontrols\ListPartyUserControl.xaml.cs">
       <DependentUpon>ListPartyUserControl.xaml</DependentUpon>
@@ -153,7 +181,22 @@
     <Compile Include="views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml.cs">
       <DependentUpon>ListPersonnageUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrolsAdmin\PartyUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\BossUC.xaml.cs">
+      <DependentUpon>BossUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\CharUC.xaml.cs">
+      <DependentUpon>CharUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\DonjonUC.xaml.cs">
+      <DependentUpon>DonjonUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\ItemUC.xaml.cs">
+      <DependentUpon>ItemUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\LootUC.xaml.cs">
+      <DependentUpon>LootUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\PartyUC.xaml.cs">
       <DependentUpon>PartyUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\CharUserControl.xaml.cs">
@@ -181,6 +224,26 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="views\administration\AdministrationViews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\administration\BossAdminV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\administration\CharactersAdminV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\administration\DonjonAdminV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\administration\ItemsAdminV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\administration\LootAdminV.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -220,7 +283,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\usercontrols\listusercontrols\ListItemsLootUserControl.xaml">
+    <Page Include="views\usercontrols\listusercontrols\ListItemsUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\usercontrols\listusercontrols\ListLootUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -232,7 +299,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="views\usercontrols\usercontrolsAdmin\PartyUC.xaml">
+    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\BossUC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\CharUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\DonjonUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\ItemUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\LootUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\PartyUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

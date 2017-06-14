@@ -9,7 +9,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="PartyAdminV">
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,7 +22,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <UC:PartyUC x:Name="UCParty" Grid.Row="0" Grid.RowSpan="3" Grid.Column="1" />
-        <LUC:ListPartyUserControl x:Name="LUCParty" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+        <LUC:ListPartyUserControl x:Name="LUCParty" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
         <StackPanel Grid.Row="3" Grid.Column="1">
             <Button x:Name="btnUpdate" Content="Save" />
             <Button x:Name="btnNew" Content="New" />
