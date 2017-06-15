@@ -7,18 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ListView x:Name="itemList"
+        <ListView x:Name="itemList" Foreground="White" Background="Transparent"
             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
             ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <ListView.ContextMenu>
-                <ContextMenu Name="ZoneIformationList" StaysOpen="true" Background="WhiteSmoke">
-                    <ContextMenu.BitmapEffect>
-                        <BitmapEffectGroup/>
-                    </ContextMenu.BitmapEffect>
-                    <MenuItem Header="Duplicate" x:Name="DuplicateAddressContextMenu" />
-                    <MenuItem Header="Remove" x:Name="RemoveAddressContextMenu" />
-                </ContextMenu>
-            </ListView.ContextMenu>
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Vertical"/>

@@ -18,17 +18,14 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label x:Name="lblParty" Content="PartyID" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="lblParty" Content="PartyID" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
         <TextBox x:Name="txtParty" Text="{Binding Loot.Party.Id , Mode=TwoWay}" Grid.Column="1" Grid.Row="0" Height="30" Width="110" />
-        <!--<ComboBox x:Name="cmbparty" ItemsSource="{Binding items}" Grid.Column="1" Grid.Row="0" Height="30" Width="110" DisplayMemberPath="name" SelectedValuePath="name" SelectedValue="{Binding Path=name}" />-->
 
-        <Label x:Name="lblChar" Content="CharacterID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="lblChar" Content="CharacterID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
         <TextBox x:Name="txtCharacter" Text="{Binding Loot.Character.Id , Mode=TwoWay}"  Grid.Column="1" Grid.Row="1" Height="30" Width="110" />
-        <!--<ComboBox x:Name="cmbChar" ItemsSource="{Binding}" Grid.Column="1" Grid.Row="1" Height="30" Width="110"/>-->
 
-        <Label x:Name="lblItem" Content="ItemID" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="lblItem" Content="ItemID" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
         <TextBox x:Name="txtbItem" Grid.Column="1" Text="{Binding Loot.ItemsId , Mode=TwoWay}" Grid.Row="2" Height="30" Width="110" />
-        <!--<ComboBox x:Name="cmbItem" ItemsSource="{Binding}" Grid.Column="1" Grid.Row="2" Height="30" Width="110"/>-->
-        
+       
     </Grid>
 </local:UserControlBase>

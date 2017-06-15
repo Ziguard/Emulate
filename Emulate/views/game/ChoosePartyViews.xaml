@@ -10,17 +10,21 @@
       d:DesignHeight="300" d:DesignWidth="600"
       Title="PartyViews">
     <Grid>
+
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="60*"/>
-            <ColumnDefinition Width="240*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="60*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="60*"/>
-            <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <UC:PartyUserControl x:Name="UCParty" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3" />
+        <TextBlock x:Name="Tb" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
         <LUC:ListPartyUserControl x:Name="UCListParty" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+        <UC:PartyUserControl x:Name="UCParty" Grid.Column="2" Grid.Row="0" Grid.RowSpan="4"/>
     </Grid>
 </Page>

@@ -9,7 +9,6 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,9 +16,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label x:Name="lblNom" Content="{Binding Personnage.Name, Mode=TwoWay}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnAnneau" Content="Anneau" Grid.Row="1" Grid.Column="0" />
-        <Button x:Name="btnCou" Content="Cou" Grid.Row="2" Grid.Column="0" />
-        <Button x:Name="btnDos" Content="Dos" Grid.Row="3" Grid.Column="0" />
+        <Label x:Name="lblNom" Content="{Binding Personnage.Name, Mode=TwoWay}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Foreground="White" />
+        <Button x:Name="btnAnneau" Content="Anneau" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Width="110" Height="30" />
+        <Button x:Name="btnCou" Content="Cou" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Width="110" Height="30" />
+        <Button x:Name="btnDos" Content="Dos" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Width="110" Height="30" />
     </Grid>
 </local:UserControlBase>

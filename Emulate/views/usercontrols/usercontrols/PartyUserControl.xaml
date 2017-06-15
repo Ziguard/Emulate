@@ -15,8 +15,11 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnNew" Content="NewParty" Grid.Column="0" Grid.Row="0" />
-        <Button x:Name="btnStart" Content="Start" Grid.Column="1" Grid.Row="1" />
-        <Button x:Name="btnDelete" Content="Delete" Grid.Column="1" Grid.Row="2" />
+        <Label x:Name="lblChoix" Content="Veuillez choisir une partie" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  Foreground="White" />
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Button x:Name="btnNew"     Content="NewParty"   VerticalAlignment="Center" FontWeight="Bold" Background="Transparent" Foreground="White" />
+            <Button x:Name="btnStart"   Content="Start"      VerticalAlignment="Center" FontWeight="Bold" Background="Transparent" Foreground="White" />
+            <Button x:Name="btnDelete"  Content="Delete"     VerticalAlignment="Center" FontWeight="Bold" Background="Transparent" Foreground="White" />
+        </StackPanel>
     </Grid>
 </local:UserControlBase>

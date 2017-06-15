@@ -21,12 +21,16 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="5" Grid.Column="1">
-            <Button x:Name="btnNouveau" Content="Nouveau"/>
-            <Button x:Name="btnMettreAjour" Content="Maj"/>
-            <Button x:Name="btnSupprimer" Content="Supprimer"/>
-        </StackPanel>
-        <UC:CharUC x:Name="UCChar" Grid.Column="1" Grid.Row="0" Grid.RowSpan="4"/>
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
         <LUC:ListPersonnageUserControl x:Name="LUCChar" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5"/>
+        <UC:CharUC x:Name="UCChar" Grid.Column="1" Grid.Row="0" Grid.RowSpan="4"/>
+        <StackPanel Grid.Column="1" Grid.Row="5" VerticalAlignment="Center">
+            <Button x:Name="btnNouveau"     Content="Nouveau"   FontWeight="Bold"   Foreground="White" Background="Transparent"/>
+            <Button x:Name="btnMettreAjour" Content="Maj"       FontWeight="Bold"   Foreground="White" Background="Transparent"/>
+            <Button x:Name="btnSupprimer"   Content="Supprimer" FontWeight="Bold"   Foreground="White" Background="Transparent"/>
+        </StackPanel>
     </Grid>
 </Page>

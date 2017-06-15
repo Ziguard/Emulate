@@ -181,29 +181,26 @@
     <Compile Include="views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml.cs">
       <DependentUpon>ListPersonnageUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\BossUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrolsAdmin\BossUC.xaml.cs">
       <DependentUpon>BossUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\CharUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrolsAdmin\CharUC.xaml.cs">
       <DependentUpon>CharUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\DonjonUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrolsAdmin\DonjonUC.xaml.cs">
       <DependentUpon>DonjonUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\ItemUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrolsAdmin\ItemUC.xaml.cs">
       <DependentUpon>ItemUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\LootUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrolsAdmin\LootUC.xaml.cs">
       <DependentUpon>LootUC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\usercontrols\usercontrols\usercontrolsAdmin\PartyUC.xaml.cs">
+    <Compile Include="views\usercontrols\usercontrolsAdmin\PartyUC.xaml.cs">
       <DependentUpon>PartyUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\CharUserControl.xaml.cs">
       <DependentUpon>CharUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\usercontrols\usercontrols\DonjonUserControl.xaml.cs">
-      <DependentUpon>DonjonUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\usercontrols\usercontrols\PartyUserControl.xaml.cs">
       <DependentUpon>PartyUserControl.xaml</DependentUpon>
@@ -299,37 +296,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\BossUC.xaml">
+    <Page Include="views\usercontrols\usercontrolsAdmin\BossUC.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\CharUC.xaml">
+    <Page Include="views\usercontrols\usercontrolsAdmin\CharUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\DonjonUC.xaml">
+    <Page Include="views\usercontrols\usercontrolsAdmin\DonjonUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\ItemUC.xaml">
+    <Page Include="views\usercontrols\usercontrolsAdmin\ItemUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\LootUC.xaml">
+    <Page Include="views\usercontrols\usercontrolsAdmin\LootUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\usercontrols\usercontrols\usercontrolsAdmin\PartyUC.xaml">
+    <Page Include="views\usercontrols\usercontrolsAdmin\PartyUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\usercontrols\usercontrols\CharUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\usercontrols\usercontrols\DonjonUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="views\usercontrols\usercontrols\PartyUserControl.xaml">
       <SubType>Designer</SubType>
@@ -372,10 +365,16 @@
     <Resource Include="imageEmulate\partylist.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imageEmulate\DJ1.jpg" />
+    <Resource Include="imageEmulate\Start.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imageEmulate\Start.jpg" />
+    <Resource Include="imageEmulate\donjon.jpg" />
+    <Resource Include="imageEmulate\forest.jpg" />
+    <Resource Include="imageEmulate\forest2.jpg" />
+    <Resource Include="imageEmulate\forest3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageEmulate\chill.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

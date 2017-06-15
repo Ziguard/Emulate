@@ -16,12 +16,12 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label x:Name="lblName" Content="Name" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtBName" Text="{Binding Donjon.Name , Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="0" Grid.Column="1" Margin="1,0"/>
+        <Label x:Name="lblName" Content="Name" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="txtBName" Text="{Binding Donjon.Name , Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="0" Grid.Column="1" Width="110" Height="30"/>
 
-        <Label x:Name="lblDuree" Content="Duree" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,221,0"/>
+        <Label x:Name="lblDuree" Content="Duree" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Foreground="White"/>
 
-        <Label x:Name="lblBoss" Content="Loot" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,221,0"/>
-        <Button x:Name="btnBoss" Grid.Column="1" Grid.Row="2" Height="30" Width="110">Voir les Boss</Button>
+        <Label x:Name="lblBoss" Content="Liste Boss" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Button x:Name="btnBoss" Grid.Column="1" Grid.Row="2" Height="30" Width="110" Content="Voir Les Boss"/>
     </Grid>
 </local:UserControlBase>

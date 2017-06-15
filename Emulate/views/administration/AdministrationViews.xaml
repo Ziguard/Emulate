@@ -19,17 +19,15 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnPlayer"  Content="Player"    Grid.Row="0" Grid.Column="0" />
-        <Button x:Name="btnItems"   Content="Items"     Grid.Row="2" Grid.Column="0" />
-        <Button x:Name="btnPartie"  Content="Partie"    Grid.Row="1" Grid.Column="1" />
-
-        <Button x:Name="btnLoot"    Content="Loot"      Grid.Row="1" Grid.Column="3" />
-        
-        <Button x:Name="btnDonjon"  Content="Donjon"    Grid.Row="0" Grid.Column="2" />
-        <Button x:Name="btnBoss"    Content="Boss"      Grid.Row="2" Grid.Column="2" />
-
-        <Button x:Name="btnPrecedent" Content="GoBack"      Grid.Row="2" Grid.Column="1" />
-
-
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
+        <Button x:Name="btnPlayer"  Content="Player"    Grid.Row="0" Grid.Column="0" FontWeight="Bold" Background="Transparent" Foreground="WhiteSmoke" FontSize="14" Cursor="None"/>
+        <Button x:Name="btnPartie"  Content="Partie"    Grid.Row="0" Grid.Column="1" FontWeight="Bold" Background="Transparent" Foreground="WhiteSmoke" FontSize="14"/>
+        <Button x:Name="btnItems"   Content="Items"     Grid.Row="0" Grid.Column="2" FontWeight="Bold" Background="Transparent" Foreground="WhiteSmoke" FontSize="14"/>
+        <Button x:Name="btnLoot"    Content="Loot"      Grid.Row="1" Grid.Column="1" FontWeight="Bold" Background="Transparent" Foreground="WhiteSmoke" FontSize="14"/>
+        <Button x:Name="btnDonjon"  Content="Donjon"    Grid.Row="2" Grid.Column="0" FontWeight="Bold" Background="Transparent" Foreground="WhiteSmoke" FontSize="14"/>
+        <Button x:Name="btnBoss"    Content="Boss"      Grid.Row="2" Grid.Column="2" FontWeight="Bold" Background="Transparent" Foreground="WhiteSmoke" FontSize="14"/>
     </Grid>
 </Page>

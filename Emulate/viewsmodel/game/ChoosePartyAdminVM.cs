@@ -40,6 +40,7 @@ namespace Emulate.viewsmodel
         private Loot itemAddChar;
 
         private Random randomBoss = new Random();
+        private Random random = new Random();
 
 
         #endregion
@@ -211,7 +212,7 @@ namespace Emulate.viewsmodel
 
         private void ItemsListLoot_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (e.AddedItems.Count >0)
+            if (e.AddedItems.Count > 0)
             {
                 itemAddChar = (e.AddedItems[0] as Loot);
             }
@@ -241,7 +242,7 @@ namespace Emulate.viewsmodel
         private async void BtnDos_Click(object sender, RoutedEventArgs e)
         {
             Emplacement emplacement = Emplacement.DOS;
-             await EquiperDesequiper(emplacement);
+            await EquiperDesequiper(emplacement);
         }
 
 
@@ -307,7 +308,17 @@ namespace Emulate.viewsmodel
 
                 currentParty.Bag.Add(itemAddBag);
                 currentPersonnage.Equipement.Remove(itemAddBag);
+
+                Int32 ilvlEquipement = 0;
+                foreach (Loot loot in currentPersonnage.Equipement)
+                {
+                    Items item = await itemsManager.Get(loot.ItemsId);
+                    ilvlEquipement = item.Ilvl + ilvlEquipement;
+                }
+                currentPersonnage.Ilvl = ilvlEquipement / currentPersonnage.Equipement.Count();
+
             }
+            await partyManager.Update(currentParty);
         }
 
         #endregion
@@ -356,7 +367,7 @@ namespace Emulate.viewsmodel
         private async void BtnLancerQuete_Click(object sender, RoutedEventArgs e)
         {
             //Test si le donjon lancer est terminer ou pas
-            if (currentParty.LastConnect > DateTime.Now)
+            if (currentParty.LastConnect < DateTime.Now)
             {
                 //Test si la partie contient bien un donjon lancer ou pas 
                 if (currentParty.DonjonLancerId != 0)
@@ -364,13 +375,27 @@ namespace Emulate.viewsmodel
                     //Si un donjon a été lancer récupère le donjon en question en base de donnée par rapports a l'id sauvegarder sur la partie.
                     Donjon endDonjon = await donjonManager.Get(currentParty.DonjonLancerId);
 
-                    //Pour chaque boss de la liste du donjon effectue un rand sur la plage de loot et ajoute le loot en question a la liste d'item de la partie ( sac ) 
-                    foreach (Boss bossTuer in endDonjon.ListeBoss)
+                    Int32 minValueRand = getIlvlParty();
+
+                    Random win = new Random();
+
+                    //Effectue un rand par rapprot a la diffuculté du donjon.
+                    if (endDonjon.IlvlLuck < win.Next(minValueRand, 150))
                     {
-                        Items itemLoot = bossTuer.ListLoot[randomBoss.Next(0, bossTuer.ListLoot.Count())];
-                        Loot nouveauLoot = new Loot();
-                        nouveauLoot.ItemsId = itemLoot.Id;
-                        currentParty.Bag.Add(nouveauLoot);
+                        //Pour chaque boss de la liste du donjon effectue un rand sur la plage de loot et ajoute le loot en question a la liste d'item de la partie ( sac ) 
+                        foreach (Boss bossTuer in endDonjon.ListeBoss)
+                        {
+                            bossManager.GetItems(bossTuer);
+                            Items itemLoot = bossTuer.ListLoot[randomBoss.Next(1, bossTuer.ListLoot.Count())];
+                            Loot nouveauLoot = new Loot();
+                            nouveauLoot.ItemsId = itemLoot.Id;
+                            currentParty.Bag.Add(nouveauLoot);
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Pas de chance Les Boss du donjon vous on reboot...!!! Retentez votre chance.  Le niveau de votre groupe actuel est de " + currentParty + " et celui du donjon consieller est", "Epique Fail", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                     }
                     //Lance le nouveau donjon selectionner
                     await affectationDonjon();
@@ -388,6 +413,19 @@ namespace Emulate.viewsmodel
 
         }
 
+        private Int32 getIlvlParty()
+        {
+            Int32 ilvlGroupe = 0;
+            Int32 ilvlPersonnage = 0;
+
+            foreach (Character personnage in currentParty.Personnages)
+            {
+                ilvlPersonnage = ilvlPersonnage + personnage.Ilvl;
+            }
+            ilvlGroupe = ilvlPersonnage / currentParty.Personnages.Count();
+            return ilvlGroupe;
+        }
+
         /// <summary>
         /// Defini la date de fin du donjon et le sauvegarde sur la partie actuel.
         /// </summary>
@@ -395,6 +433,7 @@ namespace Emulate.viewsmodel
         private async Task affectationDonjon()
         {
             DateTime endTimeDonjon = DateTime.Now + currentDonjon.Temps;
+            currentParty.DonjonLancerId = currentDonjon.Id;
             currentParty.LastConnect = endTimeDonjon;
             await partyManager.Update(currentParty);
         }

@@ -11,22 +11,25 @@
       Title="ItemsAdminV">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="40*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <UC:ItemUC x:Name="UCItems" Grid.Row="0" Grid.RowSpan="3" Grid.Column="1" />
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
+        <UC:ItemUC x:Name="UCItems" Grid.Row="0" Grid.RowSpan="3" Grid.Column="1"/>
         <LUC:ListItemsUserControl x:Name="LUCItems" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" />
-        <StackPanel Grid.Row="3" Grid.Column="1">
-            <Button x:Name="btnNouveau" Content="Nouveau"/>
-            <Button x:Name="btnMettreAjour" Content="Maj"/>
-            <Button x:Name="btnSupprimer" Content="Supprimer"/>
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+            <Button x:Name="btnNouveau" Content="Nouveau"       Foreground="White" Background="Transparent"/>
+            <Button x:Name="btnMettreAjour" Content="Maj"       Foreground="White" Background="Transparent"/>
+            <Button x:Name="btnSupprimer" Content="Supprimer"   Foreground="White" Background="Transparent"/>
         </StackPanel>
     </Grid>
 </Page>

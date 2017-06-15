@@ -20,12 +20,16 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <UC:BossUC x:Name="UCBoss" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3"/>
-        <LUC:ListBossUserControl x:Name="LUCBoss" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
-        <StackPanel Grid.Row="3" Grid.Column="1">
-            <Button x:Name="btnNouveau" Content="Nouveau"/>
-            <Button x:Name="btnMettreAjour" Content="Maj"/>
-            <Button x:Name="btnSupprimer" Content="Supprimer"/>
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
+        <UC:BossUC x:Name="UCBoss" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" FontWeight="Bold" Foreground="White" Background="Transparent" />
+        <LUC:ListBossUserControl x:Name="LUCBoss" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"  FontWeight="Bold"/>
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+            <Button x:Name="btnNouveau"     Content="Nouveau"   FontWeight="Bold"   Foreground="White" Background="Transparent"/>
+            <Button x:Name="btnMettreAjour" Content="Maj"       FontWeight="Bold"   Foreground="White" Background="Transparent"/>
+            <Button x:Name="btnSupprimer"   Content="Supprimer" FontWeight="Bold"   Foreground="White" Background="Transparent"/>
         </StackPanel>
     </Grid>
 </Page>

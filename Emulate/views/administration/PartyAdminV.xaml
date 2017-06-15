@@ -11,22 +11,26 @@
       Title="PartyAdminV">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="40*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
         <UC:PartyUC x:Name="UCParty" Grid.Row="0" Grid.RowSpan="3" Grid.Column="1" />
         <LUC:ListPartyUserControl x:Name="LUCParty" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
-        <StackPanel Grid.Row="3" Grid.Column="1">
-            <Button x:Name="btnUpdate" Content="Save" />
-            <Button x:Name="btnNew" Content="New" />
-            <Button x:Name="btnDelete" Content="Delete"/>
+        
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" >
+            <Button x:Name="btnUpdate"  Content="Save"     Foreground="White" Background="Transparent" />
+            <Button x:Name="btnNew"     Content="New"      Foreground="White" Background="Transparent" />
+            <Button x:Name="btnDelete"  Content="Delete"   Foreground="White" Background="Transparent" />
         </StackPanel>
     </Grid>
 </Page>

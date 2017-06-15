@@ -7,18 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ListView x:Name="itemList"
-            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-            ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <ListView.ContextMenu>
-                <ContextMenu Name="ZoneIformationList" StaysOpen="true" Background="WhiteSmoke">
-                    <ContextMenu.BitmapEffect>
-                        <BitmapEffectGroup/>
-                    </ContextMenu.BitmapEffect>
-                    <MenuItem Header="Duplicate" x:Name="DuplicateBossContextMenu" />
-                    <MenuItem Header="Remove" x:Name="RemoveBossContextMenu" />
-                </ContextMenu>
-            </ListView.ContextMenu>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblListeBoss" Content="Liste Des Boss" Grid.Row="0" HorizontalAlignment="Center"  VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Foreground="White"/>
+        <ListView x:Name="itemList" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="White" Background="Transparent">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Vertical"/>

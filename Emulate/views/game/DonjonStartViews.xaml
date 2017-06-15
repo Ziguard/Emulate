@@ -21,15 +21,19 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnLancerQuete" Content="Start Quest" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  />
-        <Label x:Name="lblTimeDonjon" Content="{Binding TempsDonjon, Mode=TwoWay}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Label x:Name="ilvlRecommande" Content="TODO A FAIRE" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Button x:Name="btnCancel" Content="Précédent" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Label x:Name="LabelListBoss" Content="Boss du Donjon" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label x:Name="LabelListItem" Content="Liste Loot" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <LUC:ListBossUserControl x:Name="UCListBoss" Grid.Column="0" Grid.Row="1" Grid.RowSpan="4"/>
-        <LUC:ListItemsUserControl x:Name="UCListLoot" Grid.Column="3" Grid.Row="1" Grid.RowSpan="4"/>
+        <TextBlock x:Name="Tb" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="3"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/donjon.jpg" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
+        <LUC:ListBossUserControl x:Name="UCListBoss" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Opacity="0.5"/>
+
+        <Button x:Name="btnLancerQuete" Content="Demarrer le Donjon" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="White" Background="Transparent" Height="30" />
+        <Label x:Name="lblTimeDonjon"    Content="{Binding Donjon.TempsDonjon, Mode=TwoWay}"   Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="ilvlRecommande"   Content="{Binding Donjon.ilvlLuck , Mode=TwoWay}"     Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" />
+        <Button x:Name="btnCancel" Content="Précédent" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"  FontWeight="Bold" Background="Transparent" Foreground="White" Height="30" Width="110"/>
+        
+        <Label x:Name="LabelListItem" Content="Liste Loot" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5"/>
+        <LUC:ListItemsUserControl x:Name="UCListLoot" Grid.Column="3" Grid.Row="1" Grid.RowSpan="4" Opacity="0.5"/>
     </Grid>
 </Page>

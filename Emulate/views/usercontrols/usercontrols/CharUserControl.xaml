@@ -16,8 +16,8 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="tbtNameClasse" Grid.Column="0" Grid.Row="0"/>
-        <ComboBox x:Name="cmbClasse" Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Source={enums:EnumBindingSource {x:Type enums:Classes}}}"/>
-        <Button x:Name="btnCreate" Content="Create" Grid.Column="0" Grid.Row="2" />
+        <TextBox x:Name="tbtNameClasse" Grid.Column="0" Grid.Row="0" Width="110" Height="30" />
+        <ComboBox x:Name="cmbClasse" Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Source={enums:EnumBindingSource {x:Type enums:Classes}}}" Width="110" Height="30" />
+        <Button x:Name="btnCreate" Content="Create" Grid.Column="0" Grid.Row="2" Background="Transparent" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="110" />
     </Grid>
 </local:UserControlBase>
