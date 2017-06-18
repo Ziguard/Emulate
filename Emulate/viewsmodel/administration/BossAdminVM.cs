@@ -30,7 +30,7 @@ namespace Emulate.viewsmodel.administration
         #region DefinitionManager
 
         private MySQLBossManager bossManager = new MySQLBossManager();
-        private MySQLManager<Items> itemsManager = new MySQLManager<Items>();
+        private MySQLItemsManager itemsManager = new MySQLItemsManager();
 
         #endregion
 

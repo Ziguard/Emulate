@@ -290,35 +290,42 @@ namespace Emulate.viewsmodel
 
         private async Task EquiperDesequiper(Emplacement emplacement)
         {
-            Loot itemAddBag = new Loot();
-
-            //currentPersonnage.Equipement (e => e)
-
-
-            foreach (Loot equiper in currentPersonnage.Equipement)
+            if (currentPersonnage != null)
             {
-                Items itemEquiper = await itemsManager.Get(equiper.ItemsId);
+                Loot itemAddBag = new Loot();
 
-                if (itemEquiper.Emplacement == emplacement)
+                foreach (Loot equiper in currentPersonnage.Equipement)
                 {
-                    itemAddBag = equiper;
+                    Items itemEquiper = await itemsManager.Get(equiper.ItemsId);
+
+                    if (itemEquiper.Emplacement == emplacement)
+                    {
+                        itemAddBag = equiper;
+                    }
+
+                    currentParty.Bag.Remove(itemAddChar);
+                    currentPersonnage.Equipement.Add(itemAddChar);
+
+                    currentParty.Bag.Add(itemAddBag);
+                    currentPersonnage.Equipement.Remove(itemAddBag);
+
+                    Int32 ilvlEquipement = 0;
+
+                    foreach (Loot loot in currentPersonnage.Equipement)
+                    {
+                        Items item = await itemsManager.Get(loot.ItemsId);
+                        ilvlEquipement = item.Ilvl + ilvlEquipement;
+                    }
+                    currentPersonnage.Ilvl = ilvlEquipement / currentPersonnage.Equipement.Count();
+
                 }
-                currentParty.Bag.Remove(itemAddChar);
-                currentPersonnage.Equipement.Add(itemAddChar);
-
-                currentParty.Bag.Add(itemAddBag);
-                currentPersonnage.Equipement.Remove(itemAddBag);
-
-                Int32 ilvlEquipement = 0;
-                foreach (Loot loot in currentPersonnage.Equipement)
-                {
-                    Items item = await itemsManager.Get(loot.ItemsId);
-                    ilvlEquipement = item.Ilvl + ilvlEquipement;
-                }
-                currentPersonnage.Ilvl = ilvlEquipement / currentPersonnage.Equipement.Count();
-
+                await partyManager.Update(currentParty);
             }
-            await partyManager.Update(currentParty);
+            else
+            {
+                MessageBox.Show("veuillez selectionner un personnage... ", "Pas de personnage selectionner", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            
         }
 
         #endregion
@@ -380,13 +387,13 @@ namespace Emulate.viewsmodel
                     Random win = new Random();
 
                     //Effectue un rand par rapprot a la diffuculté du donjon.
-                    if (endDonjon.IlvlLuck < win.Next(minValueRand, 150))
+                    if (endDonjon.IlvlLuck < win.Next(minValueRand, 200))
                     {
                         //Pour chaque boss de la liste du donjon effectue un rand sur la plage de loot et ajoute le loot en question a la liste d'item de la partie ( sac ) 
                         foreach (Boss bossTuer in endDonjon.ListeBoss)
                         {
                             bossManager.GetItems(bossTuer);
-                            Items itemLoot = bossTuer.ListLoot[randomBoss.Next(1, bossTuer.ListLoot.Count())];
+                            Items itemLoot = bossTuer.ListLoot[randomBoss.Next(1, bossTuer.ListLoot.Count())-1];
                             Loot nouveauLoot = new Loot();
                             nouveauLoot.ItemsId = itemLoot.Id;
                             currentParty.Bag.Add(nouveauLoot);
@@ -395,7 +402,7 @@ namespace Emulate.viewsmodel
                     }
                     else
                     {
-                        MessageBox.Show("Pas de chance Les Boss du donjon vous on reboot...!!! Retentez votre chance.  Le niveau de votre groupe actuel est de " + currentParty + " et celui du donjon consieller est", "Epique Fail", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                        MessageBox.Show("Pas de chance Les Boss du donjon vous on reboot...!!! Retentez votre chance.  Le niveau de votre groupe actuel est de " + minValueRand + " et celui du donjon consieller est", "Epique Fail", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                     }
                     //Lance le nouveau donjon selectionner
                     await affectationDonjon();
@@ -408,7 +415,7 @@ namespace Emulate.viewsmodel
             }
             else
             {
-                MessageBox.Show("Un donjon est déjà en courts veuillez patienter", "Donjon en court", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show("Un donjon est déjà en cours veuillez patienter", "Donjon en cours", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
 
         }

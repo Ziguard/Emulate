@@ -1,4 +1,32 @@
-﻿
+﻿D:\Code\Visual Studio 2015\Projects\Emulate\Emulate\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
 
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\Application.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\AdministrationViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\BossAdminV.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\CharactersAdminV.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\DonjonAdminV.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\ItemsAdminV.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\LootAdminV.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\administration\PartyAdminV.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\CreatePartyViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\ChoosePartyViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\CreateCharViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\DonjonStartViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\game\PlayViews.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListBossUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListDonjonUserControl.xaml;;
 FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListItemsUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListLootUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListPartyUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrolsAdmin\BossUC.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrolsAdmin\CharUC.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrolsAdmin\DonjonUC.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrolsAdmin\ItemUC.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrolsAdmin\LootUC.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrolsAdmin\PartyUC.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\CharUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\PartyUserControl.xaml;;
+FD:\Code\Visual Studio 2015\Projects\Emulate\Emulate\views\usercontrols\usercontrols\PersonnageUserControl.xaml;;
 

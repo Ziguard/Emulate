@@ -19,7 +19,11 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Label x:Name="lblChar" Content="Veuillez crée votre personnage" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" FontWeight="Bold"/>
+        <TextBlock x:Name="Tb" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="/Emulate;component/imageEmulate/chill.png" Stretch="UniformToFill" Height="{Binding ActualHeight,ElementName=Tb}" Width="{Binding ActualWidth,ElementName=Tb}"  />
+        </Canvas>
+        <Label x:Name="lblChar" Content="Veuillez crée votre personnage" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="White"/>
         <UC:CharUserControl x:Name="UCPersonnage" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>

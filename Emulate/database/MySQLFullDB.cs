@@ -64,17 +64,7 @@ namespace Emulate.database
                     DonjonTable.Add(generatorDonjon.GenerateItem());
                 }
 
-                //EntityGenerator<Bag> generatorBag = new EntityGenerator<Bag>();
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    BagTable.Add(generatorBag.GenerateItem());
-                //}
-
                 this.SaveChangesAsync();
-
-
-                //AddressTable.Find(1).StreetNumber = StreetNumberTable.Find(1);
-                //this.SaveChangesAsync();
             }
         }
 

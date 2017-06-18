@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Emulate.App" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACSAACAGAIIQAAIAAAABAAAAAQACAEAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.Application" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.commandworker.CommandWorker" Collapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAEAAEACAAIAQAAAAAIABAACAAAQCIIAAgAAJAiAA=</HashCode>
+      <FileName>commandworker\CommandWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.commandworker.ManualResetAction" Collapsed="true">
+    <Position X="23" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>commandworker\ManualResetAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.entitieslinks.MySQLBossManager" Collapsed="true">
+    <Position X="2.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>database\entitieslinks\MySQLBossManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.entitieslinks.MySQLCharacterManager" Collapsed="true">
+    <Position X="5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>database\entitieslinks\MySQLCharacterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.entitieslinks.MySQLDonjonManager" Collapsed="true">
+    <Position X="7.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>database\entitieslinks\MySQLDonjonManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.entitieslinks.MySQLItemsManager" Collapsed="true">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>database\entitieslinks\MySQLItemsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.entitieslinks.MySQLLootManager" Collapsed="true">
+    <Position X="11.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>database\entitieslinks\MySQLLootManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.entitieslinks.MySQLPartyManager" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>database\entitieslinks\MySQLPartyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.MySQLFullDB" Collapsed="true">
+    <Position X="24.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAACCAAAAAQAAAAAAEAAAAAEIAAAAAAAAAAA=</HashCode>
+      <FileName>database\MySQLFullDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.database.MySQLManager&lt;TEntity&gt;" Collapsed="true">
+    <Position X="6" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAABCAAAAAAAAAAEIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>database\MySQLManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.bases.BaseDBEntity" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>entities\bases\BaseDBEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.bases.BaseEntity" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>entities\bases\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.entities.Boss" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAABAEAAAQAAQAAAAEAAA=</HashCode>
+      <FileName>entities\Boss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.Character" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAEAAAABAAAAAAQICAAECAgAAAAAAABAAAA=</HashCode>
+      <FileName>entities\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.Donjon" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAEAAAABAAAACAAAQAgAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>entities\Donjon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.Items" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAIAAEQCCAAEAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>entities\Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.Loot" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAABACAA=</HashCode>
+      <FileName>entities\Loot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.Party" Collapsed="true">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiAQAAAgAAAAAAAAAAEQAAAAEAAAAAQAAAEAAAIA=</HashCode>
+      <FileName>entities\Party.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.ConnectionString" Collapsed="true">
+    <Position X="28.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAFAAAABUAAAAAAAACAAAgAgAAIAAAgAAAAI=</HashCode>
+      <FileName>entities\tools\ConnectionString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.enums.EnumBindingSourceExtension" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>entities\enums\EnumBindingSourceExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary2.Entities.Generator.EntityGenerator&lt;T&gt;" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAACAAIAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>entities\generator\EntityGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary2.Entities.Generator.TypeEnum" Collapsed="true">
+    <Position X="28.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAACABIAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>entities\generator\TypeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.json.JsonManager" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAQAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>entities\json\JsonManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary2.Entities.Reflection.Reflectionner" Collapsed="true">
+    <Position X="23" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAEAAAAAAAAAAAAAAAAAAABAAQACAAAAAA=</HashCode>
+      <FileName>entities\reflection\Reflectionner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.validator.EntityValidator" Collapsed="true">
+    <Position X="31.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>entities\validator\EntityValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.entities.validator.ValidationHelpers" Collapsed="true">
+    <Position X="30" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>entities\validator\EntityValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.logger.Logger" Collapsed="true">
+    <Position X="28.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAKIQCAIGGSAIiAUFIJSCAIASDgRCEABAQCWAMGABAQ=</HashCode>
+      <FileName>logger\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.logger.Logger2" Collapsed="true">
+    <Position X="30" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAQAAAAAAAAAgAAABgEAEAAAAAAAFgAAAI=</HashCode>
+      <FileName>logger\Logger2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.Properties.Resources" Collapsed="true">
+    <Position X="24.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.Properties.Settings" Collapsed="true">
+    <Position X="26.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.views.administration.AdministrationViews" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\AdministrationViews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.administration.BossAdminV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\BossAdminV.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.administration.CharactersAdminV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\CharactersAdminV.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.administration.DonjonAdminV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\DonjonAdminV.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.administration.ItemsAdminV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\ItemsAdminV.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.administration.LootAdminV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\LootAdminV.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.administration.PartyAdminV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\administration\PartyAdminV.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.game.ChoosePartyViews" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\game\ChoosePartyViews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.game.CreateCharViews" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\game\CreateCharViews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.game.CreatePartyViews" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\game\CreatePartyViews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.game.DonjonStartViews" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\game\DonjonStartViews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.game.PlayViews" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\game\PlayViews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.UserControlBase" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\base\UserControlBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListBossUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListBossUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListDonjonUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListDonjonUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListItemsBagUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListItemsBagUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListItemsUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListItemsUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListLootUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListLootUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListPartyUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQQAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListPartyUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.listusercontrols.ListPersonnageUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAAAAAAgAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\listusercontrols\ListPersonnageUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrols.CharUserControl" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrols\CharUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrols.PartyUserControl" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrols\PartyUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrols.PersonnageUserControl" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrols\PersonnageUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrolsAdmin.BossUC" Collapsed="true">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrolsAdmin\BossUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrolsAdmin.CharUC" Collapsed="true">
+    <Position X="14.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>views\usercontrols\usercontrolsAdmin\CharUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrolsAdmin.DonjonUC" Collapsed="true">
+    <Position X="16.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrolsAdmin\DonjonUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrolsAdmin.ItemUC" Collapsed="true">
+    <Position X="18.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrolsAdmin\ItemUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrolsAdmin.LootUC" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrolsAdmin\LootUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.views.usercontrols.usercontrolsAdmin.PartyUC" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>views\usercontrols\usercontrolsAdmin\PartyUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.AdministrationAdminVM" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAIEAAAAAAAAAAEAAAAAAAEAABAAAAABAAg=</HashCode>
+      <FileName>viewsmodel\administration\AdministrationAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.BossAdminVM" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAUAgQgBAAACAIAgAAAAkEBgACAAAAAAAAAAAgEAEA=</HashCode>
+      <FileName>viewsmodel\administration\BossAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.CharactersAdminVM" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAwAgQJBQAEAAIAAAgBAUEBAAUAAAAggAAAAAAAAEA=</HashCode>
+      <FileName>viewsmodel\administration\CharactersAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.DonjonAdminVM" Collapsed="true">
+    <Position X="24.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAUAoQgRAIQiAIAgAAAAlEBgASAEAAAIAQAAAgAAEA=</HashCode>
+      <FileName>viewsmodel\administration\DonjonAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.ItemsAdminVM" Collapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAgQIBAAAAAAAAAAAAEABAAAAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>viewsmodel\administration\ItemsAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.LootAdminVM" Collapsed="true">
+    <Position X="21.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAQAgQAAQAAAAAAQAgBAUAAgAQAACAAAAAAAAEACAA=</HashCode>
+      <FileName>viewsmodel\administration\LootAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.administration.PartyAdminVM" Collapsed="true">
+    <Position X="28.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAwAkUJBQAEAIEAQAkBAUEBBAUAAKAggAAAABgAAEA=</HashCode>
+      <FileName>viewsmodel\administration\PartyAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.ChoosePartyAdminVM" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACUArAURAAQCDAIAAEgIiiFAAQARiAgAFTAAkwIikA=</HashCode>
+      <FileName>viewsmodel\game\ChoosePartyAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.CreatePartyAdminVM" Collapsed="true">
+    <Position X="31.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>viewsmodel\game\CreatePartyAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.DonjonStratAdminVM" Collapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>viewsmodel\game\DonjonStratAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.PersonnageAdminVM" Collapsed="true">
+    <Position X="30" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>viewsmodel\game\PersonnageAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emulate.viewsmodel.PlayAdminVM" Collapsed="true">
+    <Position X="31.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>viewsmodel\game\PlayAdminVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Emulate.entities.enums.Classes" Collapsed="true">
+    <Position X="23" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAABAAACAAAAAAAACAAAAAAgAAAAAEAAAKAA=</HashCode>
+      <FileName>entities\enums\Classe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Emulate.entities.enums.Emplacement" Collapsed="true">
+    <Position X="24.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAgAAA=</HashCode>
+      <FileName>entities\enums\Emplacement.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Emulate.logger.AlertMode" Collapsed="true">
+    <Position X="21.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAQAAAAAAAAAQQgAAAAAAAAAAAAE=</HashCode>
+      <FileName>logger\AlertMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Emulate.logger.LogMode" Collapsed="true">
+    <Position X="26.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABUAAAAAACAAAAgAAAAAAAAAAAQA=</HashCode>
+      <FileName>logger\LogMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
